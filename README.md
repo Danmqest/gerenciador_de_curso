@@ -1,6 +1,5 @@
 # gerenciador_de_notas
 
-$ git tag Atualizado
 
 
 [PROJETO INTEGRADOR III - Turma B]
