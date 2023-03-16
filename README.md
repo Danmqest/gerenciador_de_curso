@@ -57,7 +57,8 @@ Dependendo do tipo de curso e do público-alvo,
 outras funcionalidades podem ser necessárias.
 
 
-#Amaury Alves da Silva
+# Amaury Alves da Silva
+
 ![tabela MER](https://user-images.githubusercontent.com/99772934/225487747-d4171646-8456-4613-9ae9-2417a2ec5a33.PNG)
 
 
