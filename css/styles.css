@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.conteiner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 140px;
+}
+.search-container {
+  position: relative;
+  z-index: 1;
+}
+.search-container input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  background-color: white;
+}
+.search-container button {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+body {
+  width: 100%;
+  background-image: src="..//im/logo\ turma8.jpg";
+  background-size: cover;
+  background-position: center;
+}
+
+.card {
+  background-color: #ffffff70;
+  padding: 30px;
+  box-shadow: 0px 10px 13px -7px #262626;
+  width: 400px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0F3540;
+}
+
+.label-float input {
+  width: 100%;
+  padding: 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid #0F3540;
+  background-color: transparent;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all .3s ease-out;
+  border-radius: 0;
+}
+
+.label-float {
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.label-float input:focus {
+  border-bottom: 2px solid #8A897B;
+}
+
+.label-float label {
+  color: #0F3540;
+  pointer-event: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all .3s ease-out;
+}
+
+.label-float input:focus+label,
+.label-float input:valid+label {
+  font-size: 11px;
+  margin-top: 0;
+  color: #8A897B;
+}
+
+button {
+  background-color: transparent;
+  color: #0F3540;
+  font-weight: bold;
+  padding: 9px;
+  border-radius: 20px;
+  width: 60%;
+  cursor: pointer;
+  margin-top: 20px;
+  border: 2px solid #0F3540;
+  outline: none;
+}
+
+button:hover {
+  background-color: #0F3540;
+  color: #fff;
+  transition: all .3s ease-out;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.hr {
+  display: flex;
+  justify-content: center;
+}
+
+hr {
+  margin: 10% 0;
+  width: 70%;
+}
+
+p {
+  color: #0F3540;
+  font-size: 11px;
+  text-align: center;
+}
+
+a {
+  color: #0E172A;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #8A897B;
+  transition: all .3s ease-out;
+}
+
+.fa-eye {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  cursor: pointer;
+  color: #0F3540;
+}
+
+#msgError {
+  text-align: center;
+  color: #ff0000;
+  background-color: #ffbbbb;
+  padding: 10px;
+  display: none;
+}
+
+body {
+  background-image: url('/img/logo\ turma8.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 10%;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+.search-container {
+  text-align: center;
+  padding: 50px;
+}
+
+img {
+  float: left;
+  margin-right: 10px;
+}
