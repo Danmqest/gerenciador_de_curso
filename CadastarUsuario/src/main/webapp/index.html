@@ -1,0 +1,173 @@
+<html>
+<body>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: grey;
+
+    }
+    form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        width: 400px;
+        margin: 0 auto;
+        margin-top: 10vh;
+    }
+    h2 {
+        text-align: center;
+        color: #555;
+        margin-top: 0;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+        color: #555;
+    }
+    #curso[disabled] {
+        cursor: not-allowed;
+    }
+    #disciplina[disabled] {
+        cursor: not-allowed;
+    }
+
+    .button {
+        position: relative;
+        left: 6.2vw;
+        background-color: #04AA6D;
+        border: none;
+        font-size: 28px;
+        color: #FFFFFF;
+        padding: 20px;
+        width: 200px;
+        text-align: center;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        text-decoration: none;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .button:after {
+        content: "";
+        background: #90EE90;
+        display: block;
+        position: absolute;
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -20px!important;
+        margin-top: -120%;
+        opacity: 0;
+        transition: all 0.8s
+    }
+
+    .button:active:after {
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transition: 0s
+    }
+</style>
+<!--
+<form action="/create-car" method="post">
+
+    <label>Car Name</label>
+    <input type="text" name="car-name" id="car-name">
+
+    <button type="submit">Register</button>
+    -->
+
+
+
+<form action="/create-user" method="post">
+    <h2>Cadastro de Aluno e Professor</h2>
+    <label for="nome">Nome:</label>
+    <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Digite seu nome completo"
+            required
+    />
+
+    <label for="email">Email:</label>
+    <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Digite seu email"
+            required
+    />
+
+    <label >Tipo:</label>
+    <select id="meu-select" name="tipo">
+        <option value="tipo" selected>Tipo</option>
+        <option value="aluno">Aluno</option>
+        <option value="professor">Professor</option>
+    </select>
+
+    <label for="curso">Curso:</label>
+    <input
+            type="text"
+            id="curso"
+            name="curso"
+            placeholder="Digite seu curso (somente para alunos)"
+    />
+
+    <label for="disciplina">Disciplina:</label>
+    <input
+            type="text"
+            id="disciplina"
+            name="disciplina"
+            placeholder="Digite sua disciplina (somente para professores)"
+    />
+
+    <label for="senha">Cadastre a sua senha abaixo</label>
+    <input type="password" name="senha" id="senha" minlength="5" maxlength="20">
+    <!-- <input type="submit" value="Cadastrar" /> -->
+    <button class="button">cadastrar-se</button>
+</form>
+<script>
+    //logica dos inputs
+    let select = document.getElementById("meu-select");
+    let input = document.getElementById("curso");
+    let input2 = document.getElementById("disciplina");
+
+    select.addEventListener("change", function () {
+        let valorSelecionado = select.value;
+
+        if (valorSelecionado === "aluno") {
+            input2.disabled = true;
+            input.disabled = false;
+        }
+        if (valorSelecionado === "professor") {
+            input.disabled = true;
+            input2.disabled = false;
+        }
+    });
+
+    let password = document.getElementById("senha").value;
+    password.addEventListener("click",function(){
+
+
+    });
+</script>
+</body>
+</html>
