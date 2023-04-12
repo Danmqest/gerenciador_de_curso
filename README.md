@@ -2,7 +2,7 @@
 
 
 # Banco de dados Usuario
-CREATE TABLE USUARIO ( ID INT PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255), SENHA VARCHAR(255));  <br />
+CREATE TABLE USUARIO ( ID INT PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255), SENHA VARCHAR(255));  <br>
 SELECT * FROM USUARIO;
 
 #
@@ -13,7 +13,6 @@ SELECT * FROM USUARIO;
 ![telaTurmas](https://user-images.githubusercontent.com/99772416/225464911-76ed5d54-24b7-4207-805e-1f3c4866c72e.png)
 
 
-SELECT * FROM USUARIO;
 
 # Lucas Bandeira da Silva
 ![Cadastro alunos](https://user-images.githubusercontent.com/126296297/225465748-16184c9a-e56d-48a5-a27f-5744b7866288.png)
