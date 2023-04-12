@@ -1,7 +1,8 @@
 # gerenciador_de_cursos
 
 
-
+# Banco de dados Usuario
+CREATE TABLE USUARIO ( ID INT PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255), SENHA VARCHAR(255));
 
 [PROJETO INTEGRADOR III - Turma B]
 
@@ -9,8 +10,6 @@ ProjetoIntergador-
 
 ![telaTurmas](https://user-images.githubusercontent.com/99772416/225464911-76ed5d54-24b7-4207-805e-1f3c4866c72e.png)
 
-# Banco de dados Usuario
-CREATE TABLE USUARIO ( ID INT PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255), SENHA VARCHAR(255));
 
 SELECT * FROM USUARIO;
 
