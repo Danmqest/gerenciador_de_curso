@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form>
+    <form id="form">
       <h2>Cadastro</h2>
       <label for="nome">Nome:</label>
       <input
@@ -13,26 +13,44 @@
         id="nome"
         name="nome"
         placeholder="Digite seu nome completo"
-        required
+        oninput="nameValidate()"
+        class="inputs required"
+        
       />
+      <span class="span-required">Deve ter mais de 3 caracteres</span>
 
       <label for="email">Email:</label>
       <input
         type="email"
         id="email"
         name="email"
-        placeholder="Digite seu email"
-        required
+        placeholder="Digite seu email" 
+        class="inputs required" 
+        oninput="emailRegex()"    
       />
+      <span class="span-required">email invalido</span>
+      
 
       <label for="senha">Senha:</label>
       <input
         type="password"
         id="senha"
         name="senha"
-        placeholder="Digite seu email"
-        required
+        placeholder="Digite sua senha"
+        class="inputs required"
+        oninput="validateMainPassword()"
       />
+      <span class="span-required">Senha deve ter no minimo 8 caracteres</span>
+
+      <label for="senha">Digite novamente a senha:</label>
+      <input
+        type="password"
+        id="senha"
+        name="senha"
+        placeholder="Digite sua senha"
+        class="inputs required"
+      />
+      <span class="span-required">as senhas não conferem</span>
 
       
 

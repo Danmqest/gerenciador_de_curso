@@ -1,21 +1,56 @@
-//logica dos inputs
-let select = document.getElementById("meu-select");
-let input = document.getElementById("curso");
-let input2 = document.getElementById("disciplina");
+const form = document.getElementById('form');
+const campos = document.querySelectorAll('.required');
+const spans = document.querySelectorAll('.span-required');
+const email = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
-select.addEventListener("change", function() {
 
-  let valorSelecionado = select.value;
+function setError(indice){
+  campos[indice].style.border = '2px solid purple'
+  spans[indice].style.display = 'block';
+}
+
+function removeError(indice){
+spans[indice].style.display = 'none';
+campos[indice].style.border = ''
+}
+
+function nameValidate(){
+    if(campos[0].value.length < 3){
+      setError(0);
+    }else{
+      removeError(0);
+    }
+    
+}
+
+function emailRegex(){
+  if(email.test(campos[1].value)){
+    removeError(1);
+  }
+    setError(1);
   
-  if (valorSelecionado === "aluno") {
-    input2.disabled = true;
-    input.disabled = false;
+}
+
+function validateMainPassword(){
+  if(campos[2].value.length < 8){
+    setError(2);
+
+  }else{
+    removeError(2);
+    
   }
-  if(valorSelecionado === "professor"){
-    input.disabled = true;
-    input2.disabled = false;
-  }
-});
+}
+function validateSecondPassword(){
+    if (campos[3] !== campos[2]) {
+      setError(3)
+    }
+      removeError(3)
+    
+}
+
+
+
+
 
 
   
