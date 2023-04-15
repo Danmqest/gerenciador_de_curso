@@ -46,6 +46,7 @@ input[type=submit] {
 .span-required{
     display: none;
     font-size: 1rem;
+    color: #4CAF50;
     
     
 }
@@ -54,12 +55,5 @@ label {
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
-    color: #555;
 }
-#curso[disabled]{
-cursor: not-allowed;
-}
-#disciplina[disabled]{
-    cursor: not-allowed;
 
-}

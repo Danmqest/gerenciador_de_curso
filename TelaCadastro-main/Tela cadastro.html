@@ -13,9 +13,6 @@
         id="nome"
         name="nome"
         placeholder="Digite seu nome completo"
-        oninput="nameValidate()"
-        class="inputs required"
-        
       />
       <span class="span-required">Deve ter mais de 3 caracteres</span>
 
@@ -24,12 +21,10 @@
         type="email"
         id="email"
         name="email"
-        placeholder="Digite seu email" 
-        class="inputs required" 
-        oninput="emailRegex()"    
+        placeholder="Digite seu email"
+        class="inputs required"
       />
       <span class="span-required">email invalido</span>
-      
 
       <label for="senha">Senha:</label>
       <input
@@ -38,7 +33,6 @@
         name="senha"
         placeholder="Digite sua senha"
         class="inputs required"
-        oninput="validateMainPassword()"
       />
       <span class="span-required">Senha deve ter no minimo 8 caracteres</span>
 
@@ -49,11 +43,8 @@
         name="senha"
         placeholder="Digite sua senha"
         class="inputs required"
-        oninput="comparePassword()"
       />
       <span class="span-required">as senhas não conferem</span>
-
-      
 
       <input type="submit" value="Cadastrar" />
     </form>
