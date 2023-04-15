@@ -35,16 +35,17 @@ function validateMainPassword(){
   if(campos[2].value.length < 8){
     setError(2);
 
-  }else{
+  }else{ 
     removeError(2);
-    
   }
+    
 }
-function validateSecondPassword(){
-    if (campos[3] !== campos[2]) {
-      setError(3)
+function comparePassword(){
+    if (campos[2].value != campos[3].value && campos[3].value.length<=8) {
+      setError(3);
+    }else{ 
+      removeError(3);
     }
-      removeError(3)
     
 }
 
