@@ -10,7 +10,7 @@ form.addEventListener("submit", (Event) => {
   emailRegex();
   validateMainPassword();
   comparePassword();
-  form.clear();
+  form.reset();
 });
 
 function setError(indice) {
@@ -47,7 +47,7 @@ function validateMainPassword() {
   }
 }
 function comparePassword() {
-  if (campos[2].value == campos[3].value && campos[3].value.length >= 8) {
+  if (campos[2].value === campos[3].value && campos[3].value.length >= 8) {
     removeError(3);
   } else {
     setError(3);
