@@ -14,12 +14,12 @@ form.addEventListener("submit", (Event) => {
 });
 
 function setError(indice) {
-  campos[indice].style.border = "2px solid red";
+  campos[indice].style.border = "2px solid  #9e082d";
   spans[indice].style.display = "block";
 }
 
 function removeError(indice) {
-  campos[indice].style.border = "";
+  campos[indice].style.border = "2px solid green";
   spans[indice].style.display = "none";
 }
 
