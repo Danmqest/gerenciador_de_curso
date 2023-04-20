@@ -48,8 +48,9 @@ concluídas.
 qualidade de alta definição e legendas para tornar o
 conteúdo acessível.
 
-7-Fórum de discussão: permitir que os alunos interajam entre
-si e com o instrutor em um fórum dedicado a perguntas e respostas.
+7-Barra de comentarios: permitirá na tela do proprio curso, 
+realizar perguntas e respostas com o professor ou outros 
+alunos.
 
 8-Tarefas e exercícios: oferecer tarefas e exercícios para os
 alunos praticarem e aplicarem o que aprenderam no curso.
@@ -59,9 +60,6 @@ feedback ao instrutor e à plataforma.
 
 10-Certificado de conclusão: (observação)
 
-Essas são apenas algumas funcionalidades possíveis.
-Dependendo do tipo de curso e do público-alvo,
-outras funcionalidades podem ser necessárias.
 
 
 # Amaury Alves da Silva
