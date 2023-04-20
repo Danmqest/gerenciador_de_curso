@@ -54,15 +54,3 @@ function comparePassword() {
   }
 }
 
-// function validarSenha(senha) {
-//   // A senha deve conter pelo menos 8 caracteres, uma letra maiúscula, uma minúscula e um número
-//   const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
-//   return regex.test(senha);
-// }
-
-// // Exemplo de uso
-// console.log(validarSenha("Senha123")); // true
-// console.log(validarSenha("senha")); // false
-// console.log(validarSenha("Senha")); // false
-// console.log(validarSenha("Senha123!")); // false
-
