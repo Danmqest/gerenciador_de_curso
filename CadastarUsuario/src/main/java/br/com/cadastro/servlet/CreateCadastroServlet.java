@@ -18,15 +18,13 @@ public class CreateCadastroServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
             //super.doPost(req, resp);
 
-            String Name = req.getParameter("nome");
+            String name = req.getParameter("nome");
             String password = req.getParameter("senha");
-            User user = new User();
-            //user.setName(password);
-            user.setPassword(password);
-            user.setName(Name);
+            User user = new User(password, name);
+
             new CadastroDao().createUser(user);
 
-            System.out.println(Name);
+            System.out.println(name);
             System.out.println(password);
 
         req.getRequestDispatcher("index.html").forward(req, resp);
