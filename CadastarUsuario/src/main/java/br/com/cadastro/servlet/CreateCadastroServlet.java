@@ -19,8 +19,8 @@ public class CreateCadastroServlet extends HttpServlet {
             //super.doPost(req, resp);
 
             String name = req.getParameter("nome");
-            String password = req.getParameter("senha");
-            User user = new User(password, name);
+            String password = req.getParameter("password");
+            User user = new User(name,password);
 
             new CadastroDao().createUser(user);
 
