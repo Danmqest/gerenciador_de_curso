@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Videos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body-video>
+<p id="conteudo"></p>
+<script src="script.js"></script>
+<header>
+  <h1>Cadastro de Vídeo</h1>
+</header>
+<main>
+  <form action="add_video.php" method="post">
+    <label for="title">Título:</label>
+    <input type="text" name="title" id="title">
+    <label for="url">URL do vídeo do YouTube:</label>
+    <input type="text" name="url" id="url">
+    <input type="submit" value="Adicionar">
+
+  </form>
+
+</main>
+<footer>
+  <p>&copy; CSolution Cadastra Videos</p>
+</footer>
+
+
+</body-video>
+</html>
+
+<script>
+  window.onload = function() {
+    var conteudo = document.getElementById('conteudo');
+    conteudo.innerHTML = 'Bem-vindo à sua página!';
+
+  }
+</script>
