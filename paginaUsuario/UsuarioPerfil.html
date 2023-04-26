@@ -1,62 +1,96 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Área do Aluno</title>
 
     <link rel="stylesheet" href="estiloTelaUsuario.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 </head>
 
 <body>
+    <header>
+        <div class="container-logo">
+            <div class="logo-imagem">
+                <a href="index.html">
+                    <img src="img/cs%20logo.png" alt="logo da Curso Store" width="90" height="72"
+                        class="d-inline-block align-text-top">
+                </a>
+            </div>
+            <div class="logo-texto"></div>
+        </div>
+
+        <div class="menu">
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#">Categorias </a></li>
+                <li><a href="#">Cursos </a></li>
+                <li><a href="#">Sobre </a></li>
+            </ul>
+        </div>
 
 
-<h1>Área do Aluno</h1>
-<h2>Informações Pessoais</h2>
-<p>Nome: exemplo</p>
-<p>E-mail: exemplo@hotmail.com</p>
-<p>Data de Nascimento: 01/01/2000</p>
+        <div class="search-box">
+            <input class="search-text" type="search" placeholder="Pesquisar... ">
+            <a class="search-btn" href="#">
+                <img class="loupe" src="img/lupa-arredondada.png" alt="lupa" width="25px" height="25px">
+            </a>
+        </div>
 
-<div class="menu">
-<h2>Cursos Matriculados</h2>
-<ul>
-    <li>Curso 1</li>
-    <li>Curso 2</li>
-    <li>Curso 3</li>
-</ul>
-</div>
 
-<div class="conteudo">
-<h2>Progresso dos Cursos</h2>
-<table>
-    <thead>
-    <tr>
-        <th>Curso</th>
-        <th>Módulo</th>
-        <th>Aulas Concluídas</th>
-        <th>Porcentagem Concluída</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>Curso 1</td>
-        <td>Módulo 1</td>
-        <td>5/10</td>
-        <td>50%</td>
-    </tr>
-    <tr>
-        <td>Curso 1</td>
-        <td>Módulo 2</td>
-        <td>0/8</td>
-        <td>0%</td>
-    </tr>
-    <tr>
-        <td>Curso 2</td>
-        <td>Módulo 1</td>
-        <td>3/5</td>
-        <td>60%</td>
-    </tr>
-    </tbody>
-</table>
-</div>
+
+    </header>
+
+
+    <main>
+        <section>
+
+        </section>
+        
+        <section class="pt-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-x1-3">
+                        <div class="offcanvas-x1 offcanvas-end" tabindex="-1" id="offcanvasSidebar">
+                            <div class="offcanvas-header bg-light">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Meu perfil</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    data-bs-target="#offcanvasSidebar" aria-label="C lose"></button>
+                            </div>
+
+                            <div class="offcanvas-body p-3 p-x1-0">
+                                <div class="bg-dark border rounded-3 p-3 w-100">
+
+                                    <div class="list-group list-group-dark list-group-borderless collapse-list">
+                                       
+                                        <a class="list-group-item" href="student-course-list.html">
+                                            <i class="bi bi-basket fa-fw me-2"></i>Meus cursos</a>
+
+                                        <a class="list-group-item" href="instructor-edit-profile.html">
+                                            <i class="bi bi-pencil-square fa-fw me-2"></i>Editar perfil</a>
+
+                                        <a class="list-group-item" href="instructor-setting.html">
+                                            <i class="bi bi-gear fa-fw me-2"></i>Configurações</a>
+
+                                        <a class="list-group-item" href="instructor-delete-account.html">
+                                            <i class="bi bi-trash fa-fw me-2"></i>Deletar conta</a>
+
+                                        <a class="list-group-item text-danger bg-danger-soft-hover" href="#">
+                                            <i class="fas fa-sign-out-alt fa-fw me-2"></i>Sign Out</a>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
 
 </body>
+
 </html>
