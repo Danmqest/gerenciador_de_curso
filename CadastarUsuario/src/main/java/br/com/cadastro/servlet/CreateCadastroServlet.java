@@ -27,6 +27,7 @@ public class CreateCadastroServlet extends HttpServlet {
             System.out.println(name);
             System.out.println(password);
 
-        req.getRequestDispatcher("index.html").forward(req, resp);
+        //req.getRequestDispatcher("index.html").forward(req, resp);
+        resp.sendRedirect("/find-User");
     }
 }
