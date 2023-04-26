@@ -4,6 +4,10 @@ import br.com.cadastro.model.User;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class CadastroDao {
 
@@ -21,5 +25,73 @@ public class CadastroDao {
         }catch (Exception e){
             System.out.println("fail in connection");
         }
+    }
+    public List<User> findUser() {
+
+        String SQL = "SELECT * FROM USUARIO";
+
+        try {
+
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+
+            System.out.println("success in database connection");
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            List<User> users = new ArrayList<>();
+
+            while (resultSet.next()) {
+
+                String name = resultSet.getString("name");
+                String password = resultSet.getString("senha");
+                String id = resultSet.getString("id");
+
+
+                User user = new User(id,name,password);
+
+                users.add(user);
+
+            }
+
+            System.out.println("success in select * user");
+
+            connection.close();
+
+            return users;
+
+        } catch (Exception e) {
+
+            System.out.println("fail in database connection");
+
+            return Collections.emptyList();
+
+        }
+
+    }
+    public void deleteUserById(String UserId) {
+
+        String SQL = "DELETE USUARIO WHERE ID = ?";
+        try {
+
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+
+            System.out.println("success in database connection");
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+            preparedStatement.setString(1, UserId);
+            preparedStatement.execute();
+
+            System.out.println("success on delete User with id: " + UserId);
+
+            connection.close();
+
+        } catch (Exception e) {
+
+            System.out.println("fail in database connection");
+
+        }
+
     }
 }
