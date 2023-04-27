@@ -8,8 +8,8 @@ Na barra de pesquisa do seu navegador cole: http://localhost:8080/console
 no campo password digite: sa
 clique em Conect
 
-Crie uma tabela para o acesso as informações
-CREATE TABLE USUARIO ( ID INT PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255), SENHA VARCHAR(255));
+Crie uma tabela para o acesso as informações <br>
+CREATE TABLE USUARIO ( ID INT PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255), SENHA VARCHAR(255)); <br>
 Clique em Run
 #
 
