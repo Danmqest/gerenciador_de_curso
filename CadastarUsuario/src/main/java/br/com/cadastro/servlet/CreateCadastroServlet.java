@@ -16,18 +16,27 @@ public class CreateCadastroServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-            //super.doPost(req, resp);
+        //super.doPost(req, resp);
 
-            String name = req.getParameter("nome");
-            String password = req.getParameter("password");
-            User user = new User(name,password);
+        String name = req.getParameter("nome");
+        String password = req.getParameter("password");
+        String userId = req.getParameter("id");
+        User user = new User(userId, name, password);
 
-            new CadastroDao().createUser(user);
+        CadastroDao register = new CadastroDao();
+        register.createUser(user);
 
-            System.out.println(name);
-            System.out.println(password);
+        if (userId.isBlank()) {
+            register.createUser(user);
+        } else {
+            register.updateCar(user);
+        }
 
-        //req.getRequestDispatcher("index.html").forward(req, resp);
+
+        System.out.println(name);
+        System.out.println(password);
+
+        //req.getRequestDispatcher("index.jsp").forward(req, resp);
         resp.sendRedirect("/find-User");
     }
 }
