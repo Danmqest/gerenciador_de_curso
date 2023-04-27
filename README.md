@@ -1,13 +1,16 @@
 # gerenciador_de_cursos
 
+#Inicio
+Para Iniciar o projeto no Intelij deve-se clicar na lateral no Botão Maeven e selecionar CadastrarUsuario logo em seguida plugins, dentro de Plugins Tomcat7 e dentro de tomcat 7: tomcat7:run
 
-# Banco de dados Usuario
-CREATE TABLE USUARIO ( ID INT PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255), SENHA VARCHAR(255));  <br>
-SELECT * FROM USUARIO;
+#  Criação Banco de dados Usuario
+Na barra de pesquisa do seu navegador cole: http://localhost:8080/console
+no campo password digite: sa
+clique em Conect
 
-#
-[PROJETO INTEGRADOR III - Turma B]
-
+Crie uma tabela para o acesso as informações
+CREATE TABLE USUARIO ( ID INT PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255), SENHA VARCHAR(255));
+Clique em Run
 #
 
 ![telaTurmas](https://user-images.githubusercontent.com/99772416/225464911-76ed5d54-24b7-4207-805e-1f3c4866c72e.png)
