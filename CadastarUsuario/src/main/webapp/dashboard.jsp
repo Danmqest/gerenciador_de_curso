@@ -25,6 +25,8 @@
                <form action="/delete-user" method="post">
                     <input type="hidden" id="id" name="id" value="${user.id}">
                     <button type="submit">Delete</button>
+                    <span> | </span>
+                    <a href="index.jsp?id=${user.id}&name=${user.name}">Update</a>
                 </form>
             </td>
         </tr>
