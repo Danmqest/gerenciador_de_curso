@@ -4,8 +4,8 @@
 Para Iniciar o projeto no Intelij deve-se clicar na lateral no Botão Maeven e selecionar CadastrarUsuario logo em seguida plugins, dentro de Plugins Tomcat7 e dentro de tomcat 7: tomcat7:run
 
 #  Criação Banco de dados Usuario
-Na barra de pesquisa do seu navegador cole: http://localhost:8080/console
-no campo password digite: sa
+Na barra de pesquisa do seu navegador cole: http://localhost:8080/console <br>
+no campo password digite: sa <br>
 clique em Conect
 
 Crie uma tabela para o acesso as informações <br>
