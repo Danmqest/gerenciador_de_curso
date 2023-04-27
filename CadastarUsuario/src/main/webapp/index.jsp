@@ -10,6 +10,7 @@
                 type="text"
                 id="nome"
                 name="nome"
+                value="${param.name}"
                 placeholder="Digite seu nome completo"
                 class="inputs required"
                 oninput="nameValidate()"
@@ -34,6 +35,7 @@
                 name="password"
                 placeholder="Digite sua senha"
                 class="inputs required"
+                value="${param.password}"
                 oninput="validateMainPassword()"
         />
         <span class="span-required">Senha deve ter no minimo 8 caracteres</span>
@@ -48,6 +50,7 @@
         />
         <span class="span-required">as senhas não conferem</span>
 
+        <input type="hidden" id="id" name="id" value="${param.id}">
         <input type="submit" value="Cadastrar" />
     </form>
     <script src="ValidaFormulario.js"></script>
