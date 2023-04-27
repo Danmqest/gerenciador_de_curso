@@ -1,6 +1,6 @@
 # gerenciador_de_cursos
 
-#Inicio
+# Inicio
 Para Iniciar o projeto no Intelij deve-se clicar na lateral no Botão Maeven e selecionar CadastrarUsuario logo em seguida plugins, dentro de Plugins Tomcat7 e dentro de tomcat 7: tomcat7:run
 
 #  Criação Banco de dados Usuario
