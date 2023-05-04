@@ -21,7 +21,7 @@ Clique em Run
   Ao executar algum desses comandos selecione o comando desejado com o mouse e clique em Run Selected
   
 #
-#Prototipos de telas
+# Prototipos de telas
 ![telaTurmas](https://user-images.githubusercontent.com/99772416/225464911-76ed5d54-24b7-4207-805e-1f3c4866c72e.png)
 
 
