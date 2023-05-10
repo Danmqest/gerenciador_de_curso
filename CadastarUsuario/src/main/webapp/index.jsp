@@ -51,10 +51,13 @@
         <span class="span-required">as senhas não conferem</span>
 
         <input type="hidden" id="id" name="id" value="${param.id}">
-        <input type="submit" value="Cadastrar" />
+        <input type="submit" value="Cadastrar"/>
     </form>
     <a href = "http://localhost:8080/telaLogin/index.html">Login</a>
     <script src="ValidaFormulario.js"></script>
 </head>
 </body>
 </html>
+
+<%-- onclick="window.location.href='http://localhost:8080/CursoStore/inicio.html'" --%>
+
