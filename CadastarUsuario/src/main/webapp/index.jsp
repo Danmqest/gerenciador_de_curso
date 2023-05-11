@@ -53,7 +53,7 @@
         <input type="hidden" id="id" name="id" value="${param.id}">
         <input type="submit" value="Cadastrar"/>
     </form>
-    <a href = "http://localhost:8080/telaLogin/index.html">Login</a>
+    <a href = "http://localhost:8080/telaLogin/Login.jsp">Login</a>
     <script src="ValidaFormulario.js"></script>
 </head>
 </body>
