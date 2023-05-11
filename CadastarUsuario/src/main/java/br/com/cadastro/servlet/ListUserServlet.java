@@ -22,6 +22,6 @@ public class ListUserServlet extends HttpServlet {
 
         req.setAttribute("user", user);
 
-        req.getRequestDispatcher("dashboard.jsp").forward(req, resp);
+        req.getRequestDispatcher("CursoStore/inicio.html").forward(req, resp);
     }
 }
