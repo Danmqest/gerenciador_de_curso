@@ -58,3 +58,9 @@ label {
     display: block;
     margin-bottom: 5px;
 }
+
+a{
+position: relative;
+left: 50vw;
+right:50vw;
+}
