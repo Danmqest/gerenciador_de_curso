@@ -3,7 +3,7 @@
 <head>
     <title>Tela de Login</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="CSS/Login.css">
 </head>
 <body>
 <div class="container">
