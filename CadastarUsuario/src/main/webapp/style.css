@@ -69,3 +69,12 @@ button {
 input[type="submit"], button {
     margin-right: 40px;
 }
+
+a{
+position:relative;
+left:10vw
+
+}
+a:viseted,{
+    color: #E233FF
+}

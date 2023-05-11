@@ -52,13 +52,12 @@
 
         <input type="hidden" id="id" name="id" value="${param.id}">
         <input type="submit" value="Cadastrar"/>
-        <button onclick="window.location.href='http://localhost:8080/index.jsp'">Login</button>
+        <a href = "http://localhost:8080/telaLogin/Login.jsp">Login</a>
     </form>
-    <a href = "http://localhost:8080/telaLogin/Login.jsp">Login</a>
     <script src="ValidaFormulario.js"></script>
 </head>
 </body>
 </html>
 
-<%-- onclick="window.location.href='http://localhost:8080/CursoStore/inicio.html'" --%>
+
 
