@@ -3,6 +3,7 @@
 <head>
     <title>Cadastro de Aluno e Professor</title>
     <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
     <form id="form" action="/create-user" method="post">
         <h2>Cadastro</h2>
         <label for="nome">Nome:</label>
