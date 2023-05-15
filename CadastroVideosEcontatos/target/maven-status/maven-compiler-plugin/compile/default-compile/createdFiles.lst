@@ -1,5 +1,0 @@
-br/com/carstore/servlet/ContatoServlet.class
-br/com/carstore/servlet/model/Car.class
-br/com/carstore/servlet/dao/CarDao.class
-br/com/carstore/servlet/DeleteCarServlet.class
-br/com/carstore/servlet/ListCarServlet.class
