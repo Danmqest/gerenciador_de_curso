@@ -1,0 +1,334 @@
+* {
+    margin: 0%;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0.8px;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+}
+
+#sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 255px;
+    background-color: #3330;
+    color: #fff;
+    padding: 16px;
+    text-align: center ;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar ul li {
+    padding: 10px 0;
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
+}
+
+#sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+#login-form {
+    margin-top: 30px;
+}
+
+#login-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#login-form input[type="text"], #login-form input[type="password"] {
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+}
+
+#login-form input[type="submit"] {
+    background-color: #fff;
+    color: #333;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+/*
+2 parte do css barra de pesquisa
+ */
+
+ body {
+     margin: 20;
+     padding: 0;
+     font-family: Arial, sans-serif;
+
+ }
+ #container-text{
+     flex: revert;
+     color: #060707;
+     text-align: center;
+     text-size-adjust: auto;
+     font-size: large;
+     font-family: Arial;
+     transition-delay: 250ms;transition-property: margin-right;
+ }
+.container-pesquisa{
+    position: absolute;
+    top: 100%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width : 940px;
+    max-height: 300px;
+    object-fit: cover;
+    color: #e62117;
+   text-align: center;
+}
+
+#search-container {
+    background-color: #171a1d;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+
+
+
+}
+
+#search-container input[type="text"] {
+    padding: 10px;
+    width: 95%;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 16px;
+    color: #444;
+    border-radius: 10px;
+}
+
+#search-container button[type="submit"] {
+    background-color: #e62117;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 66px;
+    margin: 10px;
+
+}
+
+@media screen and (max-width: 600px) {
+    #search-container input[type="text"] {
+        width: 50%;
+    }
+
+    #search-container button[type="submit"] {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+/*
+CSS GRIP LAYOUT
+ */
+.wrapper {
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 10px;
+    background-color: #fff;
+    color: #444;
+    transition-delay: 250ms;transition-property: margin-right;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.box {
+    background-color: #111010;
+    color: #fff;
+    border-radius: 45px;
+    padding: 20px;
+    font-size: 70%;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.box:hover {
+    transform: scale(1.1) translateY(-10px);
+    /* translateY() move a caixa 10 pixels para cima */
+    /* scale() aumenta o tamanho da caixa em 10% */
+}
+
+/*
+CSS DA CAIXA DE LED
+ */
+
+
+body {
+    display: flex;
+    margin-left: 450px;
+    /*justify-content: center;*/
+    align-items: center;
+    min-height: 100vh;
+    background-color: #151320;
+}
+.caixa{
+    position: relative;
+    width: 300px;
+    height: 500px;
+    color: #fff;
+    background-color: #151320;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    font: bold 2em 'Century Gothic';
+    text-transform: uppercase;
+
+}
+
+.caixa::before, .caixa::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    background: linear-gradient(45deg, #ffff00, #00ff00,#0099ff,#001aff,#a200ff,
+    #ff0055,#ff0000,#ffff00, #00ff00,#0099ff,#001aff,#a200ff);
+    background-size: 300%;
+    border-radius: 8px;
+    background-position: 150%;
+    animation: AnimarBorda 8s linear infinite;
+
+}
+@keyframes AnimarBorda{
+    0%{
+        background-position: 0;
+
+    }
+    100%{
+        background-position: 300%;
+
+    }
+}
+.caixa::after{
+    filter:blur(50px);
+}
+
+
+/*==============*/
+#boton-menu {
+    position: fixed;
+    left:20px;
+    top: 15px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #ffff00, #00ff00,#0099ff,#001aff,#a200ff,
+    #ff0055,#ff0000,#ffff00, #00ff00,#0099ff,#001aff,#a200ff);
+}
+
+#menu-lateral {
+    position: fixed;
+    right: 200px;
+    top: 0;
+    width: 200px;
+    background-color: #8e2c2c;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: right 0.3s ease;
+}
+
+#menu-lateral ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#contenido {
+    margin-right: -220px;
+}
+@keyframes rotate{
+    0%{
+        trasnform:rotate(0deg);}
+    100%{transform: rotate(360deg);
+    }
+}
+#contenido {
+    padding: 120px;
+    color: aliceblue;
+}
+
+p {
+    text-indent: 20%;
+    line-height: 1.5;
+    color: aliceblue;
+}
+/*
+Cdastro de video adiciona
+ */
+body-video {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+#conteudo {
+    margin: 50px;
+}
+
+body-video {
+    background-color: #333;
+    color: #fff;
+    padding: 18px;
+
+
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    background-color:#100938;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
