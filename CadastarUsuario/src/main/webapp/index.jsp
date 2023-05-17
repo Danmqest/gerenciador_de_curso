@@ -3,6 +3,7 @@
 <head>
     <title>Cadastro de Aluno e Professor</title>
     <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
     <form id="form" action="/create-user" method="post">
         <h2>Cadastro</h2>
         <label for="nome">Nome:</label>
@@ -52,12 +53,12 @@
 
         <input type="hidden" id="id" name="id" value="${param.id}">
         <input type="submit" value="Cadastrar"/>
+        <a href = "http://localhost:8080/telaLogin/Login.jsp">Login</a>
     </form>
-    <a href = "http://localhost:8080/telaLogin/Login.jsp">Login</a>
     <script src="ValidaFormulario.js"></script>
 </head>
 </body>
 </html>
 
-<%-- onclick="window.location.href='http://localhost:8080/CursoStore/inicio.html'" --%>
+
 

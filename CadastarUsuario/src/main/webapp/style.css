@@ -58,3 +58,23 @@ label {
     display: block;
     margin-bottom: 5px;
 }
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type="submit"], button {
+    margin-right: 40px;
+}
+
+a{
+position:relative;
+left:10vw
+
+}
+a:viseted,{
+    color: #E233FF
+}
