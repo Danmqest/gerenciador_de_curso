@@ -18,10 +18,21 @@ public class ListUserServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        List<User> user = new CadastroDao().findUser();
 
-        req.setAttribute("user", user);
 
-        req.getRequestDispatcher("CursoStore/inicio.html").forward(req, resp);
+
+        if (null == req.getSession().getAttribute("username")) {
+
+            req.setAttribute("message", "Credenciais invalidas!");
+
+            req.getRequestDispatcher("login.jsp").forward(req, resp);
+
+        } else {
+            List<User> user = new CadastroDao().findUser();
+
+            req.setAttribute("username", user);
+
+            req.getRequestDispatcher("CursoStore/inicio.html").forward(req, resp);
+        }
     }
 }

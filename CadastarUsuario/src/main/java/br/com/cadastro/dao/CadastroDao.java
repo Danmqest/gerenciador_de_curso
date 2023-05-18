@@ -55,7 +55,7 @@ public class CadastroDao {
 
             }
 
-            System.out.println("success in select * user");
+            System.out.println("success in select * USUARIO");
 
             connection.close();
 
@@ -83,7 +83,7 @@ public class CadastroDao {
             preparedStatement.setString(1, UserId);
             preparedStatement.execute();
 
-            System.out.println("success on delete User with id: " + UserId);
+            System.out.println("success on delete USUARIO with id: " + UserId);
 
             connection.close();
 
