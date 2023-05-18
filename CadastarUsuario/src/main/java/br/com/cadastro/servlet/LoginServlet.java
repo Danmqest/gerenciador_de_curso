@@ -23,7 +23,7 @@ public class LoginServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        String username = req.getParameter("name");
+        String username = req.getParameter("username");
         String password = req.getParameter("password");
 
         User user = new User(username, password);
@@ -33,7 +33,6 @@ public class LoginServlet extends HttpServlet {
         if (isValidUser) {
             req.getSession().setAttribute("username", username);
             req.getRequestDispatcher("CursoStore/inicio.html").forward(req, resp);
-            req.getRequestDispatcher("find-User").forward(req, resp);
         } else {
             req.setAttribute("message", "Invalid credentials!");
             req.getRequestDispatcher("telaLogin/Login.jsp").forward(req, resp);

@@ -10,7 +10,7 @@ import java.sql.ResultSet;
 public class UserDao {
     public boolean verifyCredentials(User user) {
 
-        String SQL = "SELECT * FROM USR WHERE NAME = ?";
+        String SQL = "SELECT * FROM USUARIO WHERE NAME = ?";
 
         try {
 
@@ -23,7 +23,7 @@ public class UserDao {
             System.out.println("success in select username");
 
             while (resultSet.next()) {
-                String password = resultSet.getString("password");
+                String password = resultSet.getString("SENHA");
                 if (password.equals(user.getPassword())) {
                     return true;
                 }
