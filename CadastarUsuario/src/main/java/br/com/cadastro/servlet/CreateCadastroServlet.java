@@ -24,7 +24,7 @@ public class CreateCadastroServlet extends HttpServlet {
         User user = new User(userId, name, password);
 
         CadastroDao register = new CadastroDao();
-        register.createUser(user);
+        //register.createUser(user);
 
         if (userId.isBlank()) {
             register.createUser(user);

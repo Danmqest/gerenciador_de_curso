@@ -34,7 +34,7 @@ public class LoginServlet extends HttpServlet {
             req.getSession().setAttribute("username", username);
             req.getRequestDispatcher("CursoStore/inicio.html").forward(req, resp);
         } else {
-            req.setAttribute("message", "Invalid credentials!");
+            req.setAttribute("message", "Credenciais invalidas!");
             req.getRequestDispatcher("telaLogin/Login.jsp").forward(req, resp);
 
         }
