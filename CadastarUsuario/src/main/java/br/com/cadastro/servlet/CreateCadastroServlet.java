@@ -38,7 +38,7 @@ public class CreateCadastroServlet extends HttpServlet {
 
         //req.getRequestDispatcher("index.jsp").forward(req, resp);
         //resp.sendRedirect("/find-User");
-        req.getRequestDispatcher("CursoStore/inicio.html").forward(req, resp);
+        req.getRequestDispatcher("paginaUsuario/usuarioPerfil.jsp").forward(req, resp);
 
     }
 }

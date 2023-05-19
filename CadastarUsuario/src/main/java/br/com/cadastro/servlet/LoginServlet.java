@@ -32,7 +32,7 @@ public class LoginServlet extends HttpServlet {
 
         if (isValidUser) {
             req.getSession().setAttribute("username", username);
-            req.getRequestDispatcher("CursoStore/inicio.html").forward(req, resp);
+            resp.sendRedirect("find-User");
         } else {
             req.setAttribute("message", "Credenciais invalidas!");
             req.getRequestDispatcher("telaLogin/Login.jsp").forward(req, resp);

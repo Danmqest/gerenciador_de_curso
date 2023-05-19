@@ -32,7 +32,7 @@ public class ListUserServlet extends HttpServlet {
 
             req.setAttribute("username", user);
 
-            req.getRequestDispatcher("CursoStore/inicio.html").forward(req, resp);
+            req.getRequestDispatcher("paginaUsuario/usuarioPerfil.jsp").forward(req, resp);
         }
     }
 }
