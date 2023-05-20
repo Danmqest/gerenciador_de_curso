@@ -25,7 +25,7 @@ public class ListUserServlet extends HttpServlet {
 
             req.setAttribute("message", "Credenciais invalidas!");
 
-            req.getRequestDispatcher("login.jsp").forward(req, resp);
+            req.getRequestDispatcher("telaLogin/Login.jsp").forward(req, resp);
 
         } else {
             List<User> user = new CadastroDao().findUser();
