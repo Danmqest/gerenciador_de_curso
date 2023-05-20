@@ -18,7 +18,7 @@ public class CreateCadastroServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //super.doPost(req, resp);
 
-        String name = req.getParameter("nome");
+        String name = req.getParameter("username");
         String password = req.getParameter("password");
         String userId = req.getParameter("id");
         User user = new User(userId, name, password);
@@ -37,8 +37,8 @@ public class CreateCadastroServlet extends HttpServlet {
         System.out.println(password);
 
         //req.getRequestDispatcher("index.jsp").forward(req, resp);
-        //resp.sendRedirect("/find-User");
-        req.getRequestDispatcher("paginaUsuario/usuarioPerfil.jsp").forward(req, resp);
+        //resp.sendRedirect("find-User");
+        req.getRequestDispatcher("http://localhost:8080/paginaUsuario/usuarioPerfil.jsp").forward(req, resp);
 
     }
 }

@@ -16,7 +16,7 @@ public class CadastroDao {
         try {
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test","sa","sa");
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
-            preparedStatement.setString(1,user.getName());
+            preparedStatement.setString(1,user.getUsername());
             preparedStatement.setString(2,user.getPassword());
 
             preparedStatement.execute();
@@ -106,7 +106,7 @@ public class CadastroDao {
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
-            preparedStatement.setString(1, user.getName());
+            preparedStatement.setString(1, user.getUsername());
             //preparedStatement.setString(2, user.getPassword());
             preparedStatement.setString(2, user.getId());
             preparedStatement.execute();

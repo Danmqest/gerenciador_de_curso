@@ -13,7 +13,7 @@ import java.io.IOException;
 
 public class DeleteUserServlet extends HttpServlet{
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws  IOException {
         String userId = req.getParameter("id");
 
         new CadastroDao().deleteUserById(userId);;
