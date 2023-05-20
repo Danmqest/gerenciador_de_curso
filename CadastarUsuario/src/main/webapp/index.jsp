@@ -1,7 +1,8 @@
 <html>
+<%@ page contentType="text/html; charset=UTF-8" %>
 <body>
 <head>
-    <title>Cadastro de Aluno e Professor</title>
+    <title>Cadastro</title>
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8">
     <form id="form" action="/create-user" method="post">
@@ -9,8 +10,8 @@
         <label for="nome">Nome:</label>
         <input
                 type="text"
-                id="nome"
-                name="nome"
+                id="username"
+                name="username"
                 value="${param.name}"
                 placeholder="Digite seu nome completo"
                 class="inputs required"
