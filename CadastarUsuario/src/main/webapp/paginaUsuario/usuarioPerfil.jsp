@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <%@ page contentType="text/html; charset=UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <head>
     <meta charset="UTF-8">
     <title>Área do Aluno</title>
@@ -33,6 +34,11 @@
             </ul>
         </div>
             <span> Olá ${sessionScope.username}!</span>
+             <form action="/delete-user" method="post">
+                                <input type="hidden" id="id" name="id" value="${param.id}">
+                                <button type="submit">Delete</button>
+                            </form>
+
         <div class="search-box">
             <input class="search-text" type="search" placeholder="Pesquisar... ">
             <a class="search-btn" href="#">
@@ -58,33 +64,24 @@
             <li class="item-menu-lateral">
                 <a href="#">
                     <span class="icon-menu-lateral"><i class="bi bi-pencil-square fa-fw me-2"></i></span>
-                    <span class="txt-link">Editar perfil</span>
+                    <span class="txt-link"> <a href="http://localhost:8080/paginaUsuario/configPessoal.jsp">Configurações pessoais</a></span>
 
                 </a>
             </li>
             <li class="item-menu-lateral">
                 <a href="#">
                     <span class="icon-menu-lateral"><i class="bi bi-gear fa-fw me-2"></i></span>
-                    <span class="txt-link">Configurações</span>
 
                 </a>
-            </li>
-            <li class="item-menu-lateral">
-                <a href="#">
-                    <span class="icon-menu-lateral"><i class="bi bi-trash fa-fw me-2"></i></span>
-                    <span class="txt-link"> <a href="/delete-user"> deletar conta</a ></span>
 
-                </a>
-            </li>
             <li class="item-menu-lateral">
-                <a href="#">
                     <span class="icon-menu-lateral"><i class="bi bi-box-arrow-right"></i></span>
                     <span class="txt-link"> <a href="/logout">Logout</a> </span>
-                </a>
             </li>
 
 
         </ul>
+
 
     </nav>
 
