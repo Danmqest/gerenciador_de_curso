@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<%@ page contentType="text/html; charset=UTF-8" %>
 <head>
     <title>Tela de Login</title>
     <meta charset="utf-8">
