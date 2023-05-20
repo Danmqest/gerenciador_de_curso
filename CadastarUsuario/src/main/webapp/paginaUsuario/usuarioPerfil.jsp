@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <title>Área do Aluno</title>
     <link href="img/cs%20logo.png" rel="icon">
-
     <link rel="stylesheet" href="http://localhost:8080/paginaUsuario/css/estiloTelaUsuario.css" charset="UTF-8">
     <link rel="stylesheet" href="http://localhost:8080/paginaUsuario/css/bootstrap.css" charset="UTF-8">
     <link rel="stylesheet" href="http://localhost:8080/paginaUsuario/css/index.css" charset="UTF-8">
@@ -33,8 +32,6 @@
                 <li><a href="#">Sobre </a></li>
             </ul>
         </div>
-
-
             <span> Olá ${sessionScope.username}!</span>
         <div class="search-box">
             <input class="search-text" type="search" placeholder="Pesquisar... ">
@@ -42,9 +39,6 @@
                 <img class="loupe" src="http://localhost:8080/paginaUsuario/img/lupa-arredondada.png" alt="lupa" width="25px" height="25px">
             </a>
         </div>
-
-
-
     </header>
 
 
@@ -78,14 +72,14 @@
             <li class="item-menu-lateral">
                 <a href="#">
                     <span class="icon-menu-lateral"><i class="bi bi-trash fa-fw me-2"></i></span>
-                    <span class="txt-link">Deletar conta</span>
+                    <span class="txt-link"> <a href="/delete-user"> deletar conta</a ></span>
 
                 </a>
             </li>
             <li class="item-menu-lateral">
                 <a href="#">
                     <span class="icon-menu-lateral"><i class="bi bi-box-arrow-right"></i></span>
-                    <span class="txt-link">Sair</span>
+                    <span class="txt-link"> <a href="/logout">Logout</a> </span>
                 </a>
             </li>
 
