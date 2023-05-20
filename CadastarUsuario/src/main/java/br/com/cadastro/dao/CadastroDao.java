@@ -44,7 +44,7 @@ public class CadastroDao {
 
             while (resultSet.next()) {
 
-                String name = resultSet.getString("NAME");
+                String name = resultSet.getString("nome");
                 String password = resultSet.getString("senha");
                 String id = resultSet.getString("id");
 
