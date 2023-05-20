@@ -2,29 +2,29 @@ package br.com.cadastro.model;
 
 public class User {
 
-    private String name;
+    private String username;
     private String password;
     private  String id;
 
 
-    public User(String name) {
-        this.name = name;
+    public User(String username) {
+        this.username = username;
 
     }
 
-    public User(String id, String name, String password) {
+    public User(String id, String username, String password) {
         this.id = id;
         this.password = password;
-        this.name = name;
+        this.username = username;
     }
 
-    public User(String name, String password){
+    public User(String username, String password){
         this.password = password;
-        this.name = name;
+        this.username = username;
     }
 
-    public String getName() {
-        return name;
+    public String getUsername() {
+        return username;
     }
     public String getPassword() {
         return password;
@@ -34,7 +34,7 @@ public class User {
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.username = name;
     }
     public void setPassword(String password) {
         this.password = password;
