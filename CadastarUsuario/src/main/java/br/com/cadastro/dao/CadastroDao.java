@@ -44,7 +44,7 @@ public class CadastroDao {
 
             while (resultSet.next()) {
 
-                String name = resultSet.getString("name");
+                String name = resultSet.getString("NAME");
                 String password = resultSet.getString("senha");
                 String id = resultSet.getString("id");
 
@@ -70,7 +70,7 @@ public class CadastroDao {
         }
 
     }
-    public void deleteUserById(String UserId) {
+    public void deleteUserById(String userId) {
 
         String SQL = "DELETE USUARIO WHERE ID = ?";
         try {
@@ -80,10 +80,10 @@ public class CadastroDao {
             System.out.println("success in database connection");
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
-            preparedStatement.setString(1, UserId);
+            preparedStatement.setString(1, userId);
             preparedStatement.execute();
 
-            System.out.println("success on delete USUARIO with id: " + UserId);
+            System.out.println("success on delete USUARIO with id: " + userId);
 
             connection.close();
 
@@ -94,7 +94,7 @@ public class CadastroDao {
         }
 
     }
-    public void updateCar(User user) {
+    public void updateUser(User user) {
 
         String SQL = "UPDATE USUARIO SET NAME = ? WHERE ID = ?";
 

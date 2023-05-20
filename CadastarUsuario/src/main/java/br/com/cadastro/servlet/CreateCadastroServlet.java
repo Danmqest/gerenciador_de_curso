@@ -18,9 +18,10 @@ public class CreateCadastroServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //super.doPost(req, resp);
 
-        String name = req.getParameter("username");
+        String name = req.getParameter("name");
         String password = req.getParameter("password");
         String userId = req.getParameter("id");
+
         User user = new User(userId, name, password);
 
         CadastroDao register = new CadastroDao();
@@ -29,7 +30,7 @@ public class CreateCadastroServlet extends HttpServlet {
         if (userId.isBlank()) {
             register.createUser(user);
         } else {
-            register.updateCar(user);
+            register.updateUser(user);
         }
 
 
