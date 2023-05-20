@@ -33,7 +33,8 @@ color: white;
 display: inline-block;
 margin: 0 10px;
 }
-.menu span{
+.menu span>a{
+    text-align: center;
 }
 
 .menu li a{
