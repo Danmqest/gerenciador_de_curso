@@ -1,0 +1,23 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: linear-gradient(89.7deg,rgb(0, 0, 0) -10.7%,rgb(53, 92, 125) 88.8%);
+  color: #ffff;
+}
+h1 {
+  color: #ffff;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.course-description {
+  background: linear-gradient(89.7deg,rgb(0, 0, 0) -10.7%,rgb(53, 92, 125) 88.8%);
+  color: #ffff;
+  padding: 20px;
+  border-radius: 5px;
+}
+a{
+  color: #00cc00;
+}
