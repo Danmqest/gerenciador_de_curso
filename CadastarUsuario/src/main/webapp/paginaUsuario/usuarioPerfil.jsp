@@ -28,16 +28,13 @@
 
         <div class="menu">
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="#">Categorias </a></li>
+
                 <li><a href="#">Cursos </a></li>
                 <li><a href="#">Sobre </a></li>
             </ul>
         </div>
             <span> Olá ${sessionScope.username}!</span>
-             <form action="/delete-user" method="post">
-                                <input type="hidden" id="id" name="id" value="${param.id}">
-                                <button type="submit">Delete</button>
-                            </form>
+
 
         <div class="search-box">
             <input class="search-text" type="search" placeholder="Pesquisar... ">
@@ -62,21 +59,27 @@
                 </a>
             </li>
             <li class="item-menu-lateral">
-                <a href="#">
+                <a href="http://localhost:8080/paginaUsuario/configPessoal.jsp">
                     <span class="icon-menu-lateral"><i class="bi bi-pencil-square fa-fw me-2"></i></span>
-                    <span class="txt-link"> <a href="http://localhost:8080/paginaUsuario/configPessoal.jsp">Configurações pessoais</a></span>
+                    <span class="txt-link"> Configurações pessoais</span>
 
                 </a>
             </li>
             <li class="item-menu-lateral">
-                <a href="#">
-                    <span class="icon-menu-lateral"><i class="bi bi-gear fa-fw me-2"></i></span>
+                <a href="http://localhost:8080/paginaUsuario/deletaConta.jsp">
+                    <input type="hidden" id="id" name="id" value="${param.id}">
+                    <span class="icon-menu-lateral"><i class="bi bi-trash fa-fw me-2"></i></span>
+                    <span class="txt-link" type="submit">Deletar conta</span>
 
                 </a>
+            </li>
+
 
             <li class="item-menu-lateral">
+                <a href="/logout">
                     <span class="icon-menu-lateral"><i class="bi bi-box-arrow-right"></i></span>
-                    <span class="txt-link"> <a href="/logout">Logout</a> </span>
+                    <span class="txt-link"> Logout </span>
+                </a>
             </li>
 
 
