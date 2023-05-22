@@ -1,9 +1,17 @@
-# gerenciador_de_cursos
+# gerenciador de Cursos
 
+# Objetivos de nossa aplicação
+- Subir uma pagina Web com a linguagem de programação java
+- Fazer requisões com formularios html e acessar os dados a partir de uma servlet
+- Usar SGBD H2 para salvar os dados das requisições
 # Inicio
 Para Iniciar o projeto no Intelij deve-se clicar na lateral no Botão Maeven e selecionar CadastrarUsuario logo em seguida plugins, dentro de Plugins Tomcat7 e dentro de tomcat 7 digite tomcat7:run
 
+# atalho
+![Atalho]("C:\Users\lucas\Videos\Captures\Gravando 2023-05-22 130822.mp4")
+
 #  Criação Banco de dados Usuario
+Com o projeto iniciado,
 Na barra de pesquisa do seu navegador cole: http://localhost:8080/console <br>
 no campo password digite: sa <br>
 clique em Conect
