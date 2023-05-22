@@ -131,3 +131,39 @@ padding-right: 0;
 span{
     color:#ffffff;
 }
+
+#videoContainer {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+
+}
+
+/* MUDA O COMPORTAMENTO DA IMAGEM DENTRO DO videoContainer */
+#videoContainer img {
+  height: 250px;
+  width: 250px;
+}
+
+#videoContainer figcaption {
+  color: white;
+
+}
+#videoContainer a{
+text-align:center;
+}
+
+#videoContainer2 {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+    text-align:center;
+}
+#videoContainer2 img {
+  height: 200px;
+  width: 200px;
+  margin: 20px;
+}
