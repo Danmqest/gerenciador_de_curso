@@ -10,7 +10,7 @@ Para Iniciar o projeto no Intelij deve-se clicar na lateral no Botão Maeven e s
 # atalho
 
 
-Uploading Gravando 2023-05-22 130822.mp4…
+https://github.com/Danmqest/gerenciador_de_curso/assets/126296297/c1d8dbcb-2585-43ab-b528-d4276f5e8b60
 
 
 
