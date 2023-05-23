@@ -8,19 +8,43 @@ body {
     padding: 0;
     background-color:#151320; ;
 }
-
+.h1-text{
+    display: flex;
+    padding-top: 30px;
+    margin: 15px;
+    border: 3px solid red;
+    border-radius: 20em;
+    font-size: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+   justify-content: center;
+    align-content: center;
+}
+/*.p {*/
+/*    display: flex;*/
+/*    margin-block-start: 1em;*/
+/*    margin-block-end: 1em;*/
+/*    margin-inline-start: 0px;*/
+/*    margin-inline-end: 0px;*/
+/*}*/
+.container .h1 {
+    border: 3px solid red;
+}
 .container {
-    width: 94px;
-    margin: 0 auto;
+    width: 1020px;
+    margin: 150px;
     background-color: rgba(23, 1, 1, 0);
-    padding: 20px;
+    text-align: center;
+    /*word-spacing: 15cm;*/
+    /*letter-spacing: 2px;*/
+    line-height: 1.5;
+    padding: 10px;
     font-family: Arial, sans-serif;
+
 }
 
 .container-caixa{
     display: flex;
     position: center;
-
     justify-content: center;
     align-content: center;
 }
@@ -32,23 +56,43 @@ body {
     min-height: 100vh;
     background-color: #151320;
 }
-.caixa{
+.caixa {
     position: relative;
     width: 1211px;
     height: 500px;
     color: #fff;
     background-color: #151320;
-    background-image: url("img/CSolution Digital Courses Logo.gif");
+    /*background-image: url("../img/LogoCursoStore.gif");*/
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center;
+    background-size: contain;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 3px;
     font: bold 2em 'Century Gothic';
     text-transform: uppercase;
-
 }
+
+
+
+/*.caixa{*/
+/*    position: relative;*/
+/*    width: 1211px;*/
+/*    height: 500px;*/
+/*    color: #fff;*/
+/*    background-color: #151320;*/
+/*    background-image: url("../img/LogoCursoStore.gif");*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    border-radius: 3px;*/
+/*    font: bold 2em 'Century Gothic';*/
+/*    text-transform: uppercase;*/
+
+/*}*/
 
 .caixa::before, .caixa::after{
     content: '';
@@ -78,4 +122,40 @@ body {
     filter:blur(50px);
 }
 
+/*CSS PAG CURSOS*/
+body-cursos {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.course-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.course-list li {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.course-list h2 {
+    margin-top: 0;
+}
+
+.course-list p {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .course-list li {
+        padding: 10px;
+    }
+}
 
