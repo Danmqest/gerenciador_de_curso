@@ -52,16 +52,16 @@
         <ul>
 
             <li class="item-menu-lateral ativo">
-                <a href="#">
+                <a href="http://localhost:8080/paginaUsuario/usuarioPerfil.jsp">
                     <span class="icon-menu-lateral"><i class="bi bi-journal"></i></span>
                     <span class="txt-link">Cursos</span>
 
                 </a>
             </li>
             <li class="item-menu-lateral">
-                <a href="http://localhost:8080/paginaUsuario/configPessoal.jsp">
+                <a href="http://localhost:8080/paginaUsuario/dadosPessoais.jsp">
                     <span class="icon-menu-lateral"><i class="bi bi-pencil-square fa-fw me-2"></i></span>
-                    <span class="txt-link"> Configurações pessoais</span>
+                    <span class="txt-link"> Dados pessoais</span>
 
                 </a>
             </li>
