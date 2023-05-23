@@ -1,0 +1,81 @@
+
+* {
+    margin: 0;
+    padding: 1.7%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color:#151320; ;
+}
+
+.container {
+    width: 94px;
+    margin: 0 auto;
+    background-color: rgba(23, 1, 1, 0);
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.container-caixa{
+    display: flex;
+    position: center;
+
+    justify-content: center;
+    align-content: center;
+}
+.body-item {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #151320;
+}
+.caixa{
+    position: relative;
+    width: 1211px;
+    height: 500px;
+    color: #fff;
+    background-color: #151320;
+    background-image: url("img/CSolution Digital Courses Logo.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    font: bold 2em 'Century Gothic';
+    text-transform: uppercase;
+
+}
+
+.caixa::before, .caixa::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    background: linear-gradient(45deg, #ffff00, #00ff00,#0099ff,#001aff,#a200ff,
+    #ff0055,#ff0000,#ffff00, #00ff00,#0099ff,#001aff,#a200ff);
+    background-size: 300%;
+    border-radius: 8px;
+    background-position: 150%;
+    animation: AnimarBorda 8s linear infinite;
+
+}
+@keyframes AnimarBorda{
+    0%{
+        background-position: 0;
+
+    }
+    100%{
+        background-position: 300%;
+
+    }
+}
+.caixa::after{
+    filter:blur(50px);
+}
+
+
