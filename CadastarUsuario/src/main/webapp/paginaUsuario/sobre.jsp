@@ -13,6 +13,42 @@
     <title>Sobre</title>
 </head>
 <body>
+<header>
+    <div class="container-logo">
+        <div class="logo-imagem">
+            <a href="index.html">
+                <img src="http://localhost:8080/paginaUsuario/img/cs logo.png" alt="logo da Curso Store" width="90" height="72"
+                     class="d-inline-block align-text-top">
+            </a>
+        </div>
+        <div class="logo-texto"></div>
+    </div>
+
+    <div class="menu">
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+
+            <li><a href="#">Cursos </a></li>
+            <li><a href="http://localhost:8080/paginaUsuario/sobre.jsp" target="_blank">Sobre </a></li>
+        </ul>
+    </div>
+    <span> Olá ${sessionScope.username}!</span>
+
+
+    <div class="search-box">
+        <input class="search-text" type="search" placeholder="Pesquisar... ">
+        <a class="search-btn" href="#">
+            <img class="loupe" src="http://localhost:8080/paginaUsuario/img/lupa-arredondada.png" alt="lupa" width="25px" height="25px">
+        </a>
+    </div>
+</header>
+
+
+
+
+
+
+
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
