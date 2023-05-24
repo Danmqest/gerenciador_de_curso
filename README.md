@@ -1,27 +1,40 @@
-# gerenciador_de_cursos
+# gerenciador de cursos
 
 # Inicio
 Para Iniciar o projeto no Intelij deve-se clicar na lateral no Botão Maeven e selecionar CadastrarUsuario logo em seguida plugins, dentro de Plugins Tomcat7 e dentro de tomcat 7 digite tomcat7:run
 
-#  Criação Banco de dados Usuario
-Na barra de pesquisa do seu navegador cole: http://localhost:8080/console <br>
-no campo password digite: sa <br>
-clique em Conect
+# Aqui vai um atalho
+![Atalho](/video/iniciar.gif)
 
-Crie uma tabela para o acesso as informações <br>
-CREATE TABLE USUARIO ( ID INT PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255), SENHA VARCHAR(255)); <br>
-Clique em Run
+#  Criação Banco de dados Usuario
+Com o Tomcat sendo executado siga esses passos: <br>
+- Na barra de pesquisa do seu navegador cole: http://localhost:8080/console <br>
+- no campo password digite: ```sa``` <br>
+- clique em Conect
+
+![Descrição-h2](/video/entrarH2.gif)
+## Script
+``` 
+
+CREATE TABLE USUARIO ( ID INT PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255), SENHA VARCHAR(255));
+
+```
+- Cole o Script e Clique em Run
 
 # COMANDOS UTEIS
- SELECT * FROM USUARIO; <BR>
- DELETE USUARIO WHERE ID = ? (TROQUE A INTERROGAÇÃO POR UM VALOR) <br>
- UPDATE USUARIO SET NAME = ? WHERE ID = ?  (TROQUE A INTERROGAÇÃO POR UM VALOR) <br>
- 
- # IMPORTANTE:
-  Ao executar algum desses comandos selecione o comando desejado com o mouse e clique em Run Selected
-  
+
+ ```
+ SELECT * FROM USUARIO;
+ DELETE USUARIO WHERE ID = ? (TROQUE A INTERROGAÇÃO POR UM VALOR)
+ UPDATE USUARIO SET NAME = ? WHERE ID = ?  (TROQUE A INTERROGAÇÃO POR UM VALOR)
+ ```
+
+# IMPORTANTE:
+Execute um comando por vez, digite o comando desejado, selecione-o e clique em ```Run Selected```
 #
-# Prototipos de telas
+
+# Alguns prototipos de Prototipos de telas
+
 ![telaTurmas](https://user-images.githubusercontent.com/99772416/225464911-76ed5d54-24b7-4207-805e-1f3c4866c72e.png)
 
 
@@ -60,8 +73,8 @@ concluídas.
 qualidade de alta definição e legendas para tornar o
 conteúdo acessível.
 
-7-Barra de comentarios: permitirá na tela do proprio curso, 
-realizar perguntas e respostas com o professor ou outros 
+7-Barra de comentarios: permitirá na tela do proprio curso,
+realizar perguntas e respostas com o professor ou outros
 alunos.
 
 8-Tarefas e exercícios: oferecer tarefas e exercícios para os
@@ -77,3 +90,9 @@ feedback ao instrutor e à plataforma.
 # Amaury Alves da Silva
 
 ![tabela MER](https://user-images.githubusercontent.com/99772934/225487747-d4171646-8456-4613-9ae9-2417a2ec5a33.PNG)
+
+# TELAS DEFINITIVAS
+# Tela com usuario não cadastrado
+![Tela Usuario](/image/tela-final.jpeg)
+# Tela com o Usuario ja cadastrado
+![Tela Usuario](/image/telaFinal.png)
