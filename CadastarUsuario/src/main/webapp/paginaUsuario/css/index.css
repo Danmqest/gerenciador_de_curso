@@ -137,7 +137,7 @@ span{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
-
+  margin-left:20.4vw;
 }
 
 /* MUDA O COMPORTAMENTO DA IMAGEM DENTRO DO videoContainer */
@@ -157,7 +157,7 @@ text-align:center;
 #videoContainer2  {
   margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
     margin-left:22vh;
 }
@@ -166,3 +166,31 @@ text-align:center;
   width: 200px;
   margin: 20px;
 }
+
+.title{
+   text-align:center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height:50vh;
+   color:white;
+}
+
+
+.card img{
+height: 200px;
+  width: 200px;
+  margin: 20px;
+}
+.card{
+width: 18rem;
+}
+
+
+
+a:hover{
+text-decoration: underline white;
+-webkit-transform: scale(1.2);
+}
+
+
