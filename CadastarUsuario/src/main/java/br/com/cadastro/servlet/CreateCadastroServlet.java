@@ -25,7 +25,7 @@ public class CreateCadastroServlet extends HttpServlet {
         User user = new User(userId, name, password);
 
         CadastroDao register = new CadastroDao();
-        //register.createUser(user);
+        register.createUser(user);
 
         if (userId.isBlank()) {
             register.createUser(user);
@@ -38,8 +38,8 @@ public class CreateCadastroServlet extends HttpServlet {
         System.out.println(password);
 
         //req.getRequestDispatcher("index.jsp").forward(req, resp);
-        resp.sendRedirect("find-User");
-       // req.getRequestDispatcher("paginaUsuario/usuarioPerfil.jsp").forward(req, resp);
+        //resp.sendRedirect("find-User");
+        req.getRequestDispatcher("paginaUsuario/usuarioPerfil.jsp").forward(req, resp);
 
     }
 }
