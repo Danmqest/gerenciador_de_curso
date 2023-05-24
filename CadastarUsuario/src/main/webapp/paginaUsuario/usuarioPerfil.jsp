@@ -94,19 +94,19 @@
            </div>
 
           <div class="card">
-            <img src="http://localhost:8080/CursoStore/img/imgC/mysql-logo.png" class="card-img-top" alt="imagem mysql">
-                 <div class="card-body">
-                    <h5 class="card-title">Curso MySQL</h5>
-                    p class="card-text">O Curso de MySQL é projetado para fornecer uma introdução abrangente ao sistema de gerenciamento de banco de dados MySQL.</p>
-                    <a href="http://localhost:8080/paginaUsuario/pages/sql.html" class="btn btn-primary">Assita as aulas</a>
-                 </div>
+              <img src="http://localhost:8080/CursoStore/img/imgC/mysql-logo.png" class="card-img-top" alt="imagem mysql">
+                   <div class="card-body">
+                        <h5 class="card-title">Curso MySQL</h5>
+                        <p class="card-text">O Curso de MySQL é projetado para fornecer uma introdução abrangente ao sistema de gerenciamento de banco de dados MySQL.</p>
+                        <a href="http://localhost:8080/paginaUsuario/pages/sql.html" class="btn btn-primary">Assita as aulas</a>
+                   </div>
           </div>
 
             <div class="card">
                 <img src="http://localhost:8080/CursoStore/img/imgC/pythonWallpapper.png" class="card-img-top" alt="imagem python">
                     <div class="card-body">
                        <h5 class="card-title">Curso Python</h5>
-                        <p class="card-text">Desvende o poder do Python. Domine a programação. Crie o futuro.</p>
+                        <p class="card-text">O Curso de MySQL é projetado para fornecer uma introdução abrangente ao sistema de gerenciamento de banco de dados MySQL.</p>
                         <a href="http://localhost:8080/paginaUsuario/pages/python.html" class="btn btn-primary">Quero Estudar</a>
                     </div>
             </div>
