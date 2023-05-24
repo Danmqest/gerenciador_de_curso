@@ -105,13 +105,16 @@
           </tr>
         </thead>
         <tbody>
-          <c:forEach var="username" items="${username}">
-            <tr>
-              <td>${userId.id}</td>
-              <td>${userName.name}</td>
 
+            <tr>
+              <td>${user.id}</td>
+              <td>${user.username}</td>
+                <form action="/delete-user" method="post">
+                    <input type="hidden" id="id" name="id" value="${user.id}">
+                    <input type="hidden" id="username" name="username" value="${user.username}">
+                    <button type="submit">Delete</button>
+                </form>
             </tr>
-          </c:forEach>
         </tbody>
       </table>
     </div>

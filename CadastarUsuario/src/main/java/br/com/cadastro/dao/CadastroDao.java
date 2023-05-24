@@ -26,6 +26,46 @@ public class CadastroDao {
             System.out.println("fail in connection");
         }
     }
+
+    public User selectByUsername(String id) {
+
+        String SQL = "SELECT * FROM USUARIO WHERE NAME = ?";
+
+        try {
+
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+
+            System.out.println("success in database connection");
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+            preparedStatement.setString(1, id);
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            while (resultSet.next()) {
+
+                String name = resultSet.getString("name");
+                String password = resultSet.getString("senha");
+                String userId = resultSet.getString("id");
+
+
+                return new User(userId, name, password);
+            }
+
+            System.out.println("success on delete USUARIO with id: " + id);
+
+            connection.close();
+
+        } catch (Exception e) {
+
+            System.out.println("fail in database connection");
+
+        }
+
+
+        return null;
+
+    }
+
     public List<User> findUser() {
 
         String SQL = "SELECT * FROM USUARIO";
