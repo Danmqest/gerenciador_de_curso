@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Área do Aluno</title>
-    <link href="img/cs%20logo.png" rel="icon">
+    <link href="http://localhost:8080/paginaUsuario/img/cs%20logo.png" rel="icon">
     <link rel="stylesheet" href="http://localhost:8080/paginaUsuario/css/estiloTelaUsuario.css" charset="UTF-8">
     <link rel="stylesheet" href="http://localhost:8080/paginaUsuario/css/bootstrap.css" charset="UTF-8">
     <link rel="stylesheet" href="http://localhost:8080/paginaUsuario/css/index.css" charset="UTF-8">
@@ -84,58 +84,64 @@
         </ul>
     </nav>
         <div id="videoContainer">
+           <div class="card">
+               <img src="http://localhost:8080/CursoStore/img/imgC/java.jpg" class="card-img-top" alt="imagem do java">
+                   <div class="card-body">
+                        <h5 class="card-title">Curso Java</h5>
+                        <p class="card-text">Domine uma das linguagens mais populares para desenvolvimento back-end, e explore o poder da Orientação a Objetos, bem como as principais bibliotecas do mundo Java.</p>
+                        <a href="http://localhost:8080/paginaUsuario/pages/java.html" class="btn btn-primary">Assita as aulas</a>
+                    </div>
+           </div>
 
-                  <!-- curso de java -->
-                <a href="http://localhost:8080/paginaUsuario/pages/java.html" target="_blank">
-                    <figure>
-                        <img src="https://www.eadplus.com.br/wp-content//uploads/2015/08/wjava.jpg" alt="Curso java">
-                        <figcaption>Curso de java</figcaption>
-                    </figure>
-                  </a>
-                  <!-- Curso MySql -->
-                  <a href="pages/mySql.html">
-                    <figure>
-                    <img src="http://localhost:8080/paginaUsuario/img/imgC/mysql-logo.png" alt="Curso MySql">
-                    <figcaption>curso de MySql</figcaption>
-                </figure>
-                  </a>
+          <div class="card">
+            <img src="http://localhost:8080/CursoStore/img/imgC/mysql-logo.png" class="card-img-top" alt="imagem mysql">
+                 <div class="card-body">
+                    <h5 class="card-title">Curso MySQL</h5>
+                    p class="card-text">O Curso de MySQL é projetado para fornecer uma introdução abrangente ao sistema de gerenciamento de banco de dados MySQL.</p>
+                    <a href="http://localhost:8080/paginaUsuario/pages/sql.html" class="btn btn-primary">Assita as aulas</a>
+                 </div>
+          </div>
 
-                <!-- curso de python -->
-                  <a href="pages/python.html">
-                    <figure>
-                    <img src="http://localhost:8080/paginaUsuario/img/imgC/pythonWallpapper.png" alt="Curso Python">
-                    <figcaption>curso de python</figcaption>
-                </figure>
+            <div class="card">
+                <img src="http://localhost:8080/CursoStore/img/imgC/pythonWallpapper.png" class="card-img-top" alt="imagem python">
+                    <div class="card-body">
+                       <h5 class="card-title">Curso Python</h5>
+                        <p class="card-text">Desvende o poder do Python. Domine a programação. Crie o futuro.</p>
+                        <a href="http://localhost:8080/paginaUsuario/pages/python.html" class="btn btn-primary">Quero Estudar</a>
+                    </div>
+            </div>
 
-              </a>
-              <!-- FrontEnd Basico -->
-                  <a href="pages/frontEnd.html">
-                    <figure>
-                    <img src="https://blog.dankicode.com/wp-content/uploads/2018/05/como-se-tornar-um-desenvolvedor-front-end.png" alt="Curso de frontEnd Basico">
-                    <figcaption>curso de frontEnd Basico</figcaption>
-                </figure>
+            <div class="card">
+               <img src="http://localhost:8080/CursoStore/img/imgC/frontEnd Basico.png" class="card-img-top" alt="imagem logo html">
+                   <div class="card-body">
+                       <h5 class="card-title">Curso Font-End Basico</h5>
+                        <p class="card-text">O Curso de Front-end Básico é projetado para fornecer uma introdução abrangente às tecnologias e conceitos fundamentais do desenvolvimento front-end.</p>
+                        <a href="http://localhost:8080/paginaUsuario/pages/frontEnd.html" class="btn btn-primary">Assita as aulas</a>
+                   </div>
+            </div>
 
-                  </a>
-                  <!-- Curso de UX E UI -->
-                  <a href="pages/UI_UX.html">
-                    <figure>
-                    <img src="https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149052117.jpg" alt="Curso de UX-UI">
-                    <figcaption>curso de UX-UI</figcaption>
-                </figure>
-                  </a>
+            <div class="card">
+                <img src="http://localhost:8080/CursoStore/img/imgC/UI-UX.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Curso UX - UI</h5>
+                        <p class="card-text">O Curso de UX (User Experience) e UI (User Interface) Básico é projetado para fornecer uma introdução abrangente aos princípios e práticas do design de experiência do usuário e da interface do usuário.</p>
+                        <a href="http://localhost:8080/paginaUsuario/pages/UX_UI.html" class="btn btn-primary">Assita as aulas</a>
+                    </div>
+            </div>
 
-                  <!-- curso de ReactNative -->
-                  <a href="pages/ReactNative.html">
-                    <figure>
-                    <img src="https://cdn.wallpapersafari.com/66/57/M0rP6h.jpg" alt="Curso de ReactNative">
-                    <figcaption>curso de ReactNative</figcaption>
-                </figure>
-                  </a>
-                </div>
-                  <!-- deve fechar a div container do video -->
+            <div class="card">
+                <img src="http://localhost:8080/CursoStore/img/imgC/react.png" class="card-img-top" alt="">
+                     <div class="card-body">
+                          <h5 class="card-title">Curso React</h5>
+                          <p class="card-text">Aprenda os primeiros passos do React Native e crie aplicativos para Android e iOS simultaneamente.</p>
+                          <a href="http://localhost:8080/paginaUsuario/pages/ReactNative.html" class="btn btn-primary">Assita as aulas</a>
+                     </div>
+            </div>
 
+
+        </div> <!-- deve fechar a div container do video -->
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-              </div>
+    </div>
 
 
     <script src="http://localhost:8080/paginaUsuario/javaScript/menu.js"></script>
