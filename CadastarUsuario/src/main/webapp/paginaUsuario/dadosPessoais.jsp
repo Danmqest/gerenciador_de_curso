@@ -81,7 +81,6 @@
                     <input type="hidden" id="id" name="id" value="${param.id}">
                     <span class="icon-menu-lateral"><i class="bi bi-trash fa-fw me-2"></i></span>
                     <span class="txt-link" type="submit">Deletar conta</span>
-
                 </a>
             </li>
 
