@@ -22,7 +22,7 @@ public class DeleteUserServlet extends HttpServlet{
         User user = new CadastroDao().selectByUsername(username);
 
         req.setAttribute("user", user);
-        req.getRequestDispatcher("paginaUsuario/dadosPessoais.jsp").forward(req,resp);
+        req.getRequestDispatcher("paginaUsuario/deletaConta.jsp").forward(req,resp);
     }
 
     @Override
