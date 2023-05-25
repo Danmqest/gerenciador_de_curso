@@ -8,9 +8,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Lista de Cursos de Tecnologia</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <link rel="stylesheet" href="http://localhost:8080/paginaUsuario/css/sobre.css">
+    <link rel="stylesheet" href="http://localhost:8080/paginaUsuario/css/reset.css">
+
 </head>
 <body-cursos>
 <h1>Lista de Cursos de Tecnologia</h1>

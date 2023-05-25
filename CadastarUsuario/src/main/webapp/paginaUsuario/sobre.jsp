@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="http://localhost:8080/paginaUsuario/css/sobre.css">
-    <link rel="stylesheet" href="http://localhost:8080/paginaUsuario/css/reset.css">
+<%--    <link rel="stylesheet" href="http://localhost:8080/paginaUsuario/css/reset.css">--%>
     <link rel="stylesheet" href="http://localhost:8080/paginaUsuario/css/main.css">
     <title>Sobre</title>
 </head>
@@ -101,13 +101,12 @@
  <body-item>
      <div class="container-caixa">
          <div class="caixa">
-             <img alt="description of the image" height="500" src="img/LogoCursoStore.gif"
-                  width="900"></img>
+             <img alt="description of the image" height="100%" src="img/LogoCursoStore.gif"
+                  width="100%"></img>
          </div>
      </div>
  </body-item>
  <!--codigo da caixa-->
-
 
 
      <!-- Add your site or application content here -->
@@ -129,6 +128,23 @@
          ga('send', 'pageview')
      </script>
      <script async src="https://www.google-analytics.com/analytics.js"></script>
- </div>
+
+
+<div class="roda">
+    <div class="text-h3">
+        <h3>
+            CS Store Cursos que muda vidas
+        </h3>
+    </div>
+    <div class="logo">
+        <div class="logo-imagem">
+            <a href="index.html">
+                <img src="http://localhost:8080/paginaUsuario/img/cs logo.png" alt="logo da Curso Store" width="90" height="72"
+                     class="d-inline-block align-text-top">
+            </a>
+        </div>
+
+</div>
+
 </body>
 </html>
