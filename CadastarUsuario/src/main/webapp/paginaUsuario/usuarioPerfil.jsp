@@ -59,10 +59,9 @@
                 </a>
             </li>
             <li class="item-menu-lateral">
-                <a href="http://localhost:8080/paginaUsuario/dadosPessoais.jsp">
+                <a href="/delete-user?username=${sessionScope.username}">
                     <span class="icon-menu-lateral"><i class="bi bi-pencil-square fa-fw me-2"></i></span>
                     <span class="txt-link"> Dados pessoais</span>
-
                 </a>
             </li>
             <li class="item-menu-lateral">
