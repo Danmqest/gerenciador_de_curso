@@ -1,8 +1,15 @@
 
 * {
     margin: 0;
-    padding: 1.7%;
+    padding: 0%;
 }
+/*.containe-pai{*/
+/*    width: auto;*/
+/*    height: 940px;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-content: center;*/
+/*}*/
 body {
     margin: 0;
     padding: 0;
@@ -56,52 +63,49 @@ body {
     min-height: 100vh;
     background-color: #151320;
 }
-.caixa {
-    position: relative;
-    width: 1211px;
-    height: 500px;
-    color: #fff;
-    background-color: #151320;
-    /*background-image: url("../img/LogoCursoStore.gif");*/
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 3px;
-    font: bold 2em 'Century Gothic';
-    text-transform: uppercase;
-}
 
-
-
-/*.caixa{*/
+/*.caixa {*/
 /*    position: relative;*/
 /*    width: 1211px;*/
 /*    height: 500px;*/
 /*    color: #fff;*/
 /*    background-color: #151320;*/
-/*    background-image: url("../img/LogoCursoStore.gif");*/
+/*    !*background-image: url("../img/LogoCursoStore.gif");*!*/
 /*    background-repeat: no-repeat;*/
-/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    background-size: contain;*/
 /*    display: flex;*/
 /*    justify-content: center;*/
 /*    align-items: center;*/
 /*    border-radius: 3px;*/
 /*    font: bold 2em 'Century Gothic';*/
 /*    text-transform: uppercase;*/
-
 /*}*/
 
-.caixa::before, .caixa::after{
+
+.caixa {
+    position: relative;
+    width: 1020px;
+    height: 500px;
+    color: #fff;
+    background-color: #151320;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    font: bold 2em 'Century Gothic';
+    text-transform: uppercase;
+
+}
+
+.caixa::before, .caixa::after {
     content: '';
     position: absolute;
     z-index: -1;
     width: calc(100% + 20px);
     height: calc(100% + 20px);
-    background: linear-gradient(45deg, #ffff00, #00ff00,#0099ff,#001aff,#a200ff,
-    #ff0055,#ff0000,#ffff00, #00ff00,#0099ff,#001aff,#a200ff);
+    background: linear-gradient(45deg, #ffff00, #00ff00, #0099ff, #001aff, #a200ff,
+    #ff0055, #ff0000, #ffff00, #00ff00, #0099ff, #001aff, #a200ff);
     background-size: 300%;
     border-radius: 8px;
     background-position: 150%;
@@ -132,6 +136,7 @@ body-cursos {
 h1 {
     text-align: center;
     padding: 20px;
+    color: white;
 }
 
 .course-list {
@@ -159,3 +164,27 @@ h1 {
     }
 }
 
+/*roda pe*/
+.roda {
+    margin-top: 10px;
+    /*width: 940px;*/
+    max-height: 100%px;
+    /*height: 100px;*/
+    justify-content: center;
+    align-content: center;
+
+    /*background-color: gray;*/
+}
+
+.text-h3 {
+    display: flex;
+    /*margin-left: 50%;*/
+    text-align: center;
+    color: white;
+    justify-content: center;
+    align-content: center;
+    /*background-image: url("../img/cs logo.png");*/
+}
+.logo-roda{
+
+}
