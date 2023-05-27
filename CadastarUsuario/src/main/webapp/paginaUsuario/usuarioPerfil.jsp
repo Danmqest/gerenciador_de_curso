@@ -18,7 +18,7 @@
     <header>
         <div class="container-logo">
             <div class="logo-imagem">
-                <a href="index.html">
+                <a href="http://localhost:8080/paginaUsuario/usuarioPerfil.jsp">
                     <img src="http://localhost:8080/paginaUsuario/img/cs logo.png" alt="logo da Curso Store" width="90" height="72"
                         class="d-inline-block align-text-top">
                 </a>
@@ -29,7 +29,7 @@
         <div class="menu">
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
 
-                <li><a href="#">Cursos </a></li>
+                <li><a href="http://localhost:8080/paginaUsuario/usuarioPerfil.jsp">Cursos </a></li>
                 <li><a href="http://localhost:8080/paginaUsuario/sobre.jsp" target="_blank">Sobre </a></li>
             </ul>
         </div>
@@ -105,7 +105,7 @@
                 <img src="http://localhost:8080/CursoStore/img/imgC/pythonWallpapper.png" class="card-img-top" alt="imagem python">
                     <div class="card-body">
                        <h5 class="card-title">Curso Python</h5>
-                        <p class="card-text">O Curso de MySQL é projetado para fornecer uma introdução abrangente ao sistema de gerenciamento de banco de dados MySQL.</p>
+                        <p class="card-text">Desvende o poder do Python. Domine a programação. Crie o futuro.</p>
                         <a href="http://localhost:8080/paginaUsuario/pages/python.html" class="btn btn-primary">Quero Estudar</a>
                     </div>
             </div>
