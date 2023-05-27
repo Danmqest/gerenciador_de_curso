@@ -135,32 +135,28 @@ public class CadastroDao {
 
     }
     public void updateUser(User user) {
-
-        String SQL = "UPDATE USUARIO SET NAME = ? WHERE ID = ?";
+        String SQL = "UPDATE USUARIO SET NAME = ?, SENHA = ? WHERE ID = ?";
 
         try {
-
-            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa","sa");
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
 
             System.out.println("success in database connection");
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
             preparedStatement.setString(1, user.getUsername());
-            //preparedStatement.setString(2, user.getPassword());
-            preparedStatement.setString(2, user.getId());
-            preparedStatement.execute();
+            preparedStatement.setString(2, user.getPassword());
+            preparedStatement.setString(3, user.getId());
+            preparedStatement.executeUpdate();
 
             System.out.println("success in update USUARIO");
 
             connection.close();
 
         } catch (Exception e) {
-
             System.out.println("fail in database connection");
             System.out.println("Error: " + e.getMessage());
-
         }
-
     }
+
 }

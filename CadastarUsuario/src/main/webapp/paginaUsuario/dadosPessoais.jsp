@@ -4,13 +4,32 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <style>
-    #item{
-    display:flex;
-    justify-content: center;
-    align-itens: center;
-    margin-top:40vh;
-    color:white;
-    }
+     #page-update{
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        #page-update table {
+            width: 50%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        #page-update th, #page-update td {
+            padding: 8px;
+            border: 1px solid #ccc;
+            color: white;
+        }
+
+         #page-update a {
+            color: green;
+            text-decoration: none;
+         }
+
+         #page-update a:hover {
+            color: darkblue; /* Cor do texto ao passar o mouse */
+            text-decoration: underline; /* Sublinhar ao passar o mouse */
+         }
 </style>
 
 <head>
@@ -62,17 +81,18 @@
         </div>
         <ul>
 
-            <li class="item-menu-lateral ativo">
+            <li class="item-menu-lateral">
                 <a href="http://localhost:8080/paginaUsuario/usuarioPerfil.jsp">
                     <span class="icon-menu-lateral"><i class="bi bi-journal"></i></span>
                     <span class="txt-link">Cursos</span>
 
                 </a>
             </li>
-            <li class="item-menu-lateral">
-                <a href="http://localhost:8080/paginaUsuario/dadosPessoais.jsp">
+            <li class="item-menu-lateral ativo">
+                <a href="/update-user?username=${sessionScope.username}">
+                    <input type="hidden" id="id" name="id" value="${param.id}">
                     <span class="icon-menu-lateral"><i class="bi bi-pencil-square fa-fw me-2"></i></span>
-                    <span class="txt-link"> Dados pessoais</span>
+                    <span class="txt-link" type="submit"> Dados pessoais</span>
                 </a>
             </li>
 
@@ -93,6 +113,31 @@
             </li>
         </ul>
     </nav>
+
+    <div id="page-update">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>${user.id}</td>
+                    <td>${user.username}</td>
+                    <td>
+                        <form action="/update-user" method="post">
+                            <input type="hidden" id="id" name="id" value="${user.id}">
+                            <input type="hidden" id="username" name="username" value="${user.username}">
+                            <a href="index.jsp?id=${user.id}&name=${user.username}">Update</a>
+                        </form>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
 
     <script src="http://localhost:8080/paginaUsuario/javaScript/menu.js"></script>

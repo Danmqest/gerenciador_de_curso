@@ -3,17 +3,33 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-
 <style>
-    #item{
-    display:flex;
-    justify-content: center;
-    align-itens: center;
-    margin-top:40vh;
-    color:white;
+    #page-delete{
+        margin-top: 20px;
+        text-align: center;
     }
-</style>
 
+    #page-delete table{
+        width: 50%;
+        margin: 0 auto;
+        border-collapse: collapse;
+    }
+
+    #page-delete th, #page-delete td{
+        padding: 8px;
+        border: 1px solid #ccc;
+        color: white;
+    }
+
+    .delete-button {
+            background-color: red;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+</style>
 
 <head>
     <meta charset="UTF-8">
@@ -64,7 +80,7 @@
         </div>
         <ul>
 
-            <li class="item-menu-lateral ativo">
+            <li class="item-menu-lateral">
                 <a href="http://localhost:8080/paginaUsuario/usuarioPerfil.jsp">
                     <span class="icon-menu-lateral"><i class="bi bi-journal"></i></span>
                     <span class="txt-link">Cursos</span>
@@ -72,13 +88,13 @@
                 </a>
             </li>
             <li class="item-menu-lateral">
-                <a href="http://localhost:8080/paginaUsuario/dadosPessoais.jsp">
+                <a href="/update-user?username=${sessionScope.username}">
                     <span class="icon-menu-lateral"><i class="bi bi-pencil-square fa-fw me-2"></i></span>
                     <span class="txt-link"> Dados pessoais</span>
                 </a>
             </li>
 
-            <li class="item-menu-lateral">
+            <li class="item-menu-lateral ativo">
                 <a href="/delete-user?username=${sessionScope.username}">
                     <input type="hidden" id="id" name="id" value="${param.id}">
                     <span class="icon-menu-lateral"><i class="bi bi-trash fa-fw me-2"></i></span>
@@ -97,29 +113,31 @@
         </ul>
     </nav>
 
-    <div id="item">
+    <div id="page-delete">
         <table>
             <thead>
-              <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Actions</th>
-              </tr>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Actions</th>
+                </tr>
             </thead>
             <tbody>
-
                 <tr>
-                  <td>${user.id}</td>
-                  <td>${user.username}</td>
-                    <form action="/delete-user" method="post">
-                        <input type="hidden" id="id" name="id" value="${user.id}">
-                        <input type="hidden" id="username" name="username" value="${user.username}">
-                        <button type="submit">Delete</button>
-                    </form>
+                    <td>${user.id}</td>
+                    <td>${user.username}</td>
+                    <td>
+                        <form action="/delete-user" method="post">
+                            <input type="hidden" id="id" name="id" value="${user.id}">
+                            <input type="hidden" id="username" name="username" value="${user.username}">
+                            <button type="submit" class="delete-button">Delete</button>
+                        </form>
+                    </td>
                 </tr>
             </tbody>
-          </table>
-        </div>
+        </table>
+    </div>
+
 
 
 
