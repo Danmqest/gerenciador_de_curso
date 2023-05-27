@@ -73,15 +73,14 @@
                 <a href="http://localhost:8080/paginaUsuario/dadosPessoais.jsp">
                     <span class="icon-menu-lateral"><i class="bi bi-pencil-square fa-fw me-2"></i></span>
                     <span class="txt-link"> Dados pessoais</span>
-
                 </a>
             </li>
+
             <li class="item-menu-lateral">
-                <a href="http://localhost:8080/paginaUsuario/deletaConta.jsp">
+                <a href="/delete-user?username=${sessionScope.username}">
                     <input type="hidden" id="id" name="id" value="${param.id}">
                     <span class="icon-menu-lateral"><i class="bi bi-trash fa-fw me-2"></i></span>
                     <span class="txt-link" type="submit">Deletar conta</span>
-
                 </a>
             </li>
 
@@ -95,29 +94,7 @@
         </ul>
     </nav>
 
-    <div id="item">
-    <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody>
 
-            <tr>
-              <td>${user.id}</td>
-              <td>${user.username}</td>
-                <form action="/delete-user" method="post">
-                    <input type="hidden" id="id" name="id" value="${user.id}">
-                    <input type="hidden" id="username" name="username" value="${user.username}">
-                    <button type="submit">Delete</button>
-                </form>
-            </tr>
-        </tbody>
-      </table>
-    </div>
     <script src="http://localhost:8080/paginaUsuario/javaScript/menu.js"></script>
 
 </body>

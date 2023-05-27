@@ -3,6 +3,13 @@
     margin: 0;
     padding: 0%;
 }
+/*.containe-pai{*/
+/*    width: auto;*/
+/*    height: 940px;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-content: center;*/
+/*}*/
 body {
     margin: 0;
     padding: 0;
@@ -160,8 +167,9 @@ h1 {
 /*roda pe*/
 .roda {
     margin-top: 10px;
-    width: 940px;
-    height: 100px;
+    /*width: 940px;*/
+    max-height: 100%px;
+    /*height: 100px;*/
     justify-content: center;
     align-content: center;
 
@@ -170,9 +178,13 @@ h1 {
 
 .text-h3 {
     display: flex;
-    margin-left: 50%;
+    /*margin-left: 50%;*/
+    text-align: center;
     color: white;
     justify-content: center;
     align-content: center;
     /*background-image: url("../img/cs logo.png");*/
+}
+.logo-roda{
+
 }
