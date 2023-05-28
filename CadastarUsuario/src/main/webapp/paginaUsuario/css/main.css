@@ -260,3 +260,8 @@
       page-break-after: avoid;
     }
   }
+
+ .hidden {
+   display: flex;
+   margin: 10px;
+ }

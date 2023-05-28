@@ -59,7 +59,7 @@
         <div class="menu">
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
 
-                <li><a href="#">Cursos </a></li>
+                <li><a href="http://localhost:8080/paginaUsuario/cursos.jsp">Cursos </a></li>
                 <li><a href="http://localhost:8080/paginaUsuario/sobre.jsp" target="_blank">Sobre </a></li>
             </ul>
         </div>
@@ -113,6 +113,33 @@
             </li>
         </ul>
     </nav>
+    <div class="roda">
+        <div class="text-h3">
+            <h3>CSloution &copy; 2023</h3>
+        </div>
+        <div class="logo-roda">
+            <a href="index.html">
+                <img src="http://localhost:8080/paginaUsuario/img/cs logo.png" alt="logo da Curso Store" width="90" height="72"
+                     class="d-inline-block align-text-top">
+                </img>
+            </a>
+        </div>
+    </div>
+    <style>
+        /* Rodapé */
+        .roda {
+            margin-top: 10px;
+            max-height: 100%;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .text-h3 {
+            display: flex;
+            text-align: center;
+            color: white;
+            /*justify-content: center;*/
+            /*align-content: center;*/
 
     <div id="page-update">
         <table>
@@ -140,8 +167,19 @@
     </div>
 
 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100%;
+        }
+
+        .logo-roda {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0.2%;
+        }
+    </style>
     <script src="http://localhost:8080/paginaUsuario/javaScript/menu.js"></script>
-
 </body>
-
 </html>

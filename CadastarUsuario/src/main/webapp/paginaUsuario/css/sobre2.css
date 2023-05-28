@@ -1,0 +1,43 @@
+
+/*--------******************************************************/
+body {
+    background-color: #151320;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand img {
+    width: 90px;
+    height: 72px;
+}
+
+.h1-text {
+    text-align: center;
+    padding: 30px;
+}
+
+.container {
+    padding: 20px;
+}
+
+.container p {
+    margin-bottom: 20px;
+}
+
+.roda {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.roda img {
+    width: 90px;
+    height: 72px;
+}
+
+.roda h3 {
+    margin-top: 10px;
+}

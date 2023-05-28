@@ -1,60 +1,49 @@
-
+/* Estilos básicos */
 * {
     margin: 0;
-    padding: 0%;
+    padding: 0;
 }
-/*.containe-pai{*/
-/*    width: auto;*/
-/*    height: 940px;*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-content: center;*/
-/*}*/
+
+/* Estilos responsivos */
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color:#151320; ;
+    background-color: #151320;
 }
-.h1-text{
-    display: flex;
-    padding-top: 30px;
-    margin: 15px;
-    border: 3px solid red;
-    border-radius: 20em;
-    font-size: 50px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-   justify-content: center;
-    align-content: center;
-}
-/*.p {*/
-/*    display: flex;*/
-/*    margin-block-start: 1em;*/
-/*    margin-block-end: 1em;*/
-/*    margin-inline-start: 0px;*/
-/*    margin-inline-end: 0px;*/
-/*}*/
-.container .h1 {
-    border: 3px solid red;
-}
+
 .container {
-    width: 1020px;
-    margin: 150px;
-    background-color: rgba(23, 1, 1, 0);
-    text-align: center;
-    /*word-spacing: 15cm;*/
-    /*letter-spacing: 2px;*/
-    line-height: 1.5;
-    padding: 10px;
-    font-family: Arial, sans-serif;
-
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.container-caixa{
+/* Estilos específicos para diferentes tamanhos de tela */
+@media (min-width: 768px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+
+/* Estilos para alinhar ao centro */
+.container-caixa {
     display: flex;
-    position: center;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
+
 .body-item {
     height: 90px;
     display: flex;
@@ -64,24 +53,17 @@ body {
     background-color: #151320;
 }
 
-/*.caixa {*/
-/*    position: relative;*/
-/*    width: 1211px;*/
-/*    height: 500px;*/
-/*    color: #fff;*/
-/*    background-color: #151320;*/
-/*    !*background-image: url("../img/LogoCursoStore.gif");*!*/
-/*    background-repeat: no-repeat;*/
-/*    background-position: center;*/
-/*    background-size: contain;*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    border-radius: 3px;*/
-/*    font: bold 2em 'Century Gothic';*/
-/*    text-transform: uppercase;*/
-/*}*/
-
+.h1-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    margin: 15px;
+    border: 3px solid red;
+    border-radius: 20em;
+    font-size: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
 
 .caixa {
     position: relative;
@@ -95,59 +77,64 @@ body {
     border-radius: 3px;
     font: bold 2em 'Century Gothic';
     text-transform: uppercase;
-
 }
 
-.caixa::before, .caixa::after {
+.caixa::before,
+.caixa::after {
     content: '';
     position: absolute;
     z-index: -1;
     width: calc(100% + 20px);
     height: calc(100% + 20px);
-    background: linear-gradient(45deg, #ffff00, #00ff00, #0099ff, #001aff, #a200ff,
-    #ff0055, #ff0000, #ffff00, #00ff00, #0099ff, #001aff, #a200ff);
+    background: linear-gradient(45deg, #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000, #ffff00, #00ff00, #0099ff, #001aff, #a200ff);
     background-size: 300%;
     border-radius: 8px;
     background-position: 150%;
     animation: AnimarBorda 8s linear infinite;
-
 }
-@keyframes AnimarBorda{
-    0%{
+
+@keyframes AnimarBorda {
+    0% {
         background-position: 0;
-
     }
-    100%{
+
+    100% {
         background-position: 300%;
-
     }
 }
-.caixa::after{
-    filter:blur(50px);
+
+.caixa::after {
+    filter: blur(50px);
+
 }
 
-/*CSS PAG CURSOS*/
+/* CSS PAG CURSOS */
 body-cursos {
+    display: flex;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+
 }
 
 h1 {
     text-align: center;
     padding: 20px;
     color: white;
+
 }
 
 .course-list {
     list-style-type: none;
     padding: 0;
+
 }
 
 .course-list li {
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 5px solid #ccc;
     padding: 20px;
+
 }
 
 .course-list h2 {
@@ -164,27 +151,29 @@ h1 {
     }
 }
 
-/*roda pe*/
+/* Rodapé */
 .roda {
     margin-top: 10px;
-    /*width: 940px;*/
-    max-height: 100%px;
-    /*height: 100px;*/
+    max-height: 100%;
     justify-content: center;
     align-content: center;
-
-    /*background-color: gray;*/
 }
 
 .text-h3 {
     display: flex;
-    /*margin-left: 50%;*/
     text-align: center;
     color: white;
     justify-content: center;
     align-content: center;
-    /*background-image: url("../img/cs logo.png");*/
-}
-.logo-roda{
 
+}
+.iframe{
+    border: 5px solid #9e082d;
+}
+
+.logo-roda {
+    border: 5px solid #9e082d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
