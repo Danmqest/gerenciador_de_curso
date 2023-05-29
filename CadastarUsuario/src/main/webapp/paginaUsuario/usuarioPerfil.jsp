@@ -3,7 +3,6 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <head>
-    <meta charset="UTF-8">
     <title>Área do Aluno</title>
     <link href="http://localhost:8080/paginaUsuario/img/cs%20logo.png" rel="icon">
     <link rel="stylesheet" href="http://localhost:8080/paginaUsuario/css/estiloTelaUsuario.css" charset="UTF-8">
@@ -33,7 +32,9 @@
                 <li><a href="http://localhost:8080/paginaUsuario/sobre.jsp" target="_blank">Sobre </a></li>
             </ul>
         </div>
-            <span> Olá ${sessionScope.username}!</span>
+            <c:if test="${sessionScope.username != null}">
+               <span>${sessionScope.username}</span>
+            </c:if>
 
 
         <div class="search-box">
@@ -141,6 +142,19 @@
         </div> <!-- deve fechar a div container do video -->
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     </div>
+
+    <div class="rodape">
+            <div class="text-h3">
+                <h3>CScursos &copy; 2023</h3>
+            </div>
+            <div class="logo-rodape">
+                <a href="http://localhost:8080/paginaUsuario/usuarioPerfil.jsp">
+                    <img src="http://localhost:8080/paginaUsuario/img/cs logo.png" alt="logo da Curso Store" width="90" height="72"
+                         class="d-inline-block align-text-top">
+                    </img>
+                </a>
+            </div>
+        </div>
 
 
     <script src="http://localhost:8080/paginaUsuario/javaScript/menu.js"></script>

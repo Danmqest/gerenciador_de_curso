@@ -3,52 +3,23 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-<style>
-     #page-update{
-            margin-top: 20px;
-            text-align: center;
-        }
-
-        #page-update table {
-            width: 50%;
-            margin: 0 auto;
-            border-collapse: collapse;
-        }
-
-        #page-update th, #page-update td {
-            padding: 8px;
-            border: 1px solid #ccc;
-            color: white;
-        }
-
-         #page-update a {
-            color: green;
-            text-decoration: none;
-         }
-
-         #page-update a:hover {
-            color: darkblue; /* Cor do texto ao passar o mouse */
-            text-decoration: underline; /* Sublinhar ao passar o mouse */
-         }
-</style>
-
 <head>
-    <meta charset="UTF-8">
-    <title>Área do Aluno</title>
-    <link href="img/cs%20logo.png" rel="icon">
+
+    <title>dados Pessoais</title>
+    <link href="http://localhost:8080/paginaUsuario/img/cs%20logo.png" rel="icon">
     <link rel="stylesheet" href="http://localhost:8080/paginaUsuario/css/estiloTelaUsuario.css" charset="UTF-8">
     <link rel="stylesheet" href="http://localhost:8080/paginaUsuario/css/bootstrap.css" charset="UTF-8">
     <link rel="stylesheet" href="http://localhost:8080/paginaUsuario/css/index.css" charset="UTF-8">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" charset="UTF-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" charset="UTF-8">
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" charset="UTF-8">
 </head>
 
 <body>
     <header>
         <div class="container-logo">
             <div class="logo-imagem">
-                <a href="index.html">
+                <a href="http://localhost:8080/paginaUsuario/usuarioPerfil.jsp">
                     <img src="http://localhost:8080/paginaUsuario/img/cs logo.png" alt="logo da Curso Store" width="90" height="72"
                         class="d-inline-block align-text-top">
                 </a>
@@ -63,7 +34,9 @@
                 <li><a href="http://localhost:8080/paginaUsuario/sobre.jsp" target="_blank">Sobre </a></li>
             </ul>
         </div>
-            <span> Olá ${sessionScope.username}!</span>
+            <c:if test="${sessionScope.username != null}">
+                <span>${sessionScope.username}</span>
+            </c:if>
 
 
         <div class="search-box">
@@ -113,73 +86,53 @@
             </li>
         </ul>
     </nav>
-    <div class="roda">
+
+   <div id="info">
+    <c:if test="${sessionScope.username == null}">
+        <h1>Faça o login novamente para acessar essa pagina para atualizar seus dados pessoais</h1>
+    </c:if>
+    </div>
+
+    <c:if test="${sessionScope.username != null}">
+    <div id="page-update">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>${user.id}</td>
+                        <td>${user.username}</td>
+                        <td>
+                            <form action="/update-user" method="post">
+                                <input type="hidden" id="id" name="id" value="${user.id}">
+                                <input type="hidden" id="username" name="username" value="${user.username}">
+                                <a href="http://localhost:8080/paginaUsuario/dadosCadastrais.jsp?id=${user.id}&name=${user.username}">Update</a>
+                            </form>
+                        </td>
+                     </tr>
+                </tbody>
+            </table>
+    </div>
+    </c:if>
+
+    <div class="rodape">
         <div class="text-h3">
-            <h3>CSloution &copy; 2023</h3>
+            <h3>CScursos &copy; 2023</h3>
         </div>
-        <div class="logo-roda">
-            <a href="index.html">
+        <div class="logo-rodape">
+            <a href="http://localhost:8080/paginaUsuario/usuarioPerfil.jsp">
                 <img src="http://localhost:8080/paginaUsuario/img/cs logo.png" alt="logo da Curso Store" width="90" height="72"
                      class="d-inline-block align-text-top">
                 </img>
             </a>
         </div>
     </div>
-    <style>
-        /* Rodapé */
-        .roda {
-            margin-top: 10px;
-            max-height: 100%;
-            justify-content: center;
-            align-content: center;
-        }
 
-        .text-h3 {
-            display: flex;
-            text-align: center;
-            color: white;
-            /*justify-content: center;*/
-            /*align-content: center;*/
-
-    <div id="page-update">
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>${user.id}</td>
-                    <td>${user.username}</td>
-                    <td>
-                        <form action="/update-user" method="post">
-                            <input type="hidden" id="id" name="id" value="${user.id}">
-                            <input type="hidden" id="username" name="username" value="${user.username}">
-                            <a href="index.jsp?id=${user.id}&name=${user.username}">Update</a>
-                        </form>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 100%;
-        }
-
-        .logo-roda {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 0.2%;
-        }
-    </style>
     <script src="http://localhost:8080/paginaUsuario/javaScript/menu.js"></script>
 </body>
 </html>
