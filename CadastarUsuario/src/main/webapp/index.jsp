@@ -7,6 +7,7 @@
     <title>Cadastro</title>
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8">
+   <div id="container">
     <form id="form" action="/create-user" method="post">
         <h2>Cadastro</h2>
 
@@ -62,9 +63,12 @@
                 <% } %>
 
         <input type="hidden" id="id" name="id" value="${param.id}">
-        <input type="submit" value="Cadastrar"/>
-        <a href = "http://localhost:8080/telaLogin/Login.jsp">Login</a>
+            <input type="submit" value="Cadastrar"/>
+            <br>
+            <a href = "http://localhost:8080/telaLogin/Login.jsp">Login</a>
+
     </form>
+   </div>
     <script src="ValidaFormulario.js"></script>
 </head>
 </body>
