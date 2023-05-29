@@ -21,26 +21,52 @@ public class CreateCadastroServlet extends HttpServlet {
         String userId = req.getParameter("id");
         String name = req.getParameter("username");
         String password = req.getParameter("password");
+        String email = req.getParameter("email");
+        String confirmPassword = req.getParameter("confirmPassword");
 
 
-        User user = new User(userId, name, password);
-
-        CadastroDao register = new CadastroDao();
-
+        String redirectUrl = null; // Variável para armazenar o URL de redirecionamento
 
         if (userId.isBlank()) {
-            register.createUser(user);
+            // Validações para cadastro
+            if (name.length() < 3) {
+                redirectUrl = "http://localhost:8080/index.jsp?error=O nome deve ter mais de 3 caracteres";
+            } else if (email != null && !email.isEmpty() && !email.matches("^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$")) {
+                redirectUrl = "http://localhost:8080/index.jsp?error=O email é inválido";
+            } else if (password.length() < 8) {
+                redirectUrl = "http://localhost:8080/index.jsp?error=A senha deve ter no mínimo 8 caracteres";
+            } else if (!password.equals(confirmPassword)) {
+                redirectUrl = "http://localhost:8080/index.jsp?error=As senhas não conferem";
+            } else {
+                User user = new User(userId, name, password);
+                CadastroDao register = new CadastroDao();
+                register.createUser(user);
+                redirectUrl = "http://localhost:8080/paginaUsuario/usuarioPerfil.jsp";
+            }
         } else {
-            register.updateUser(user);
+            // Validações para atualização de usuário
+            if (name.length() < 3) {
+                redirectUrl = "http://localhost:8080/paginaUsuario/dadosCadastrais.jsp?error=O nome deve ter mais de 3 caracteres";
+            } else if (password.length() < 8) {
+                redirectUrl = "http://localhost:8080/paginaUsuario/dadosCadastrais.jsp?error=A senha deve ter no mínimo 8 caracteres";
+            } else if (!password.equals(confirmPassword)) {
+                redirectUrl = "http://localhost:8080/paginaUsuario/dadosCadastrais.jsp?error=As senhas não conferem";
+            } else {
+                User user = new User(userId, name, password);
+                CadastroDao register = new CadastroDao();
+                register.updateUser(user);
+                redirectUrl = "http://localhost:8080/telaLogin/Login.jsp";
+            }
+        }
+
+        // Redirecionamento
+        if (redirectUrl != null) {
+            resp.sendRedirect(redirectUrl);
         }
 
 
-        System.out.println(name);
-        System.out.println(password);
 
-        //req.getRequestDispatcher("index.jsp").forward(req, resp);
-        //resp.sendRedirect("find-User");
-        req.getRequestDispatcher("paginaUsuario/usuarioPerfil.jsp").forward(req, resp);
 
     }
 }
+
