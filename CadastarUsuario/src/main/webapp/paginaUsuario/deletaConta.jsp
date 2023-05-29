@@ -20,7 +20,7 @@
     <header>
         <div class="container-logo">
             <div class="logo-imagem">
-                <a href="index.html">
+                <a href="http://localhost:8080/paginaUsuario/usuarioPerfil.jsp">
                     <img src="http://localhost:8080/paginaUsuario/img/cs logo.png" alt="logo da Curso Store" width="90" height="72"
                         class="d-inline-block align-text-top">
                 </a>
