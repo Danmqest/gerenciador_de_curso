@@ -1,5 +1,7 @@
 <html>
 <%@ page contentType="text/html; charset=UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<% String errorMessage = request.getParameter("error"); %>
 <body>
 <head>
     <title>Cadastro</title>
@@ -7,6 +9,7 @@
     <meta charset="UTF-8">
     <form id="form" action="/create-user" method="post">
         <h2>Cadastro</h2>
+
         <label for="nome">Nome:</label>
         <input
                 type="text"
@@ -17,6 +20,7 @@
                 class="inputs required"
                 oninput="nameValidate()"
         />
+
         <span class="span-required">Deve ter mais de 3 caracteres</span>
 
         <label for="email">Email:</label>
@@ -45,12 +49,17 @@
         <label for="senha">Digite novamente a senha:</label>
         <input
                 type="password"
-                name="password"
+                name="confirmPassword"
                 placeholder="Digite sua senha"
                 class="inputs required"
                 oninput="comparePassword()"
         />
         <span class="span-required">as senhas não conferem</span>
+
+        <%-- Exibir a mensagem de erro, se houver --%>
+                <% if (errorMessage != null && !errorMessage.isEmpty()) { %>
+                    <p class="error-message"><%= errorMessage %></p>
+                <% } %>
 
         <input type="hidden" id="id" name="id" value="${param.id}">
         <input type="submit" value="Cadastrar"/>
