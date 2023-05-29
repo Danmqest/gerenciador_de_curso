@@ -17,7 +17,7 @@
 <div class="containe-pai">
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="http://localhost:8080/paginaUsuario/usuarioPerfil.jsp">
             <img src="http://localhost:8080/paginaUsuario/img/cs logo.png" alt="logo da Curso Store" width="90" height="72" class="d-inline-block align-text-top">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -124,7 +124,7 @@
 <div class="roda">
     <div class="text-h3">
         <div class="logo-roda">
-            <a href="index.html">
+            <a href="http://localhost:8080/paginaUsuario/usuarioPerfil.jsp">
             <img src="http://localhost:8080/paginaUsuario/img/cs logo.png" alt="logo da Curso Store" width="90"
                  height="72"
                  class="d-inline-block align-text-top"></a>
