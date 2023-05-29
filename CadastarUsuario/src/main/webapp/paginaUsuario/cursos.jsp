@@ -16,6 +16,7 @@
 <link rel="stylesheet" href="http://localhost:8080/paginaUsuario/css/sobre.css">
 <%--    <link rel="stylesheet" href="http://localhost:8080/paginaUsuario/css/reset.css">--%>
 <link rel="stylesheet" href="http://localhost:8080/paginaUsuario/css/main.css">
+    <link href="http://localhost:8080/paginaUsuario/img/cs%20logo.png" rel="icon">
 <head>
 <body>
 
