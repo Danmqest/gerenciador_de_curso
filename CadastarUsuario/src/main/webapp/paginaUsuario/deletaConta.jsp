@@ -109,7 +109,7 @@
                         <td>${user.id}</td>
                         <td>${user.username}</td>
                         <td>
-                            <form action="/delete-user" method="post">
+                            <form action="/delete-user" method="post" onsubmit="return confirmDelete();">
                                 <input type="hidden" id="id" name="id" value="${user.id}">
                                 <input type="hidden" id="username" name="username" value="${user.username}">
                                 <button type="submit" class="delete-button">Delete</button>
