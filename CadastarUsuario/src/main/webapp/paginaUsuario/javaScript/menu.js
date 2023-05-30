@@ -19,3 +19,7 @@ var menuLateral = document.querySelector('.menu-lateral')
 btnExp.addEventListener('click', function(){
     menuLateral.classList.toggle('expandir')
 })
+
+function confirmDelete() {
+            return confirm("Tem certeza que deseja excluir a conta?");
+        }
