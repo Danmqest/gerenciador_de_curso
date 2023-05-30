@@ -39,7 +39,7 @@ public class UpdateUserServlet extends HttpServlet {
 
         } else {
 
-            resp.sendRedirect("/find-User");
+            resp.sendRedirect("CursoStore/inicio.html");
 
         }
 
