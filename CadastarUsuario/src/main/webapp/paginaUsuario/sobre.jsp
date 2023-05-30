@@ -5,71 +5,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="http://localhost:8080/paginaUsuario/img/cs%20logo.png" rel="icon">
+    <link rel="stylesheet" href="http://localhost:8080/paginaUsuario/css/estiloTelaUsuario.css" charset="UTF-8">
+    <link rel="stylesheet" href="http://localhost:8080/paginaUsuario/css/bootstrap.css" charset="UTF-8">
+    <link rel="stylesheet" href="http://localhost:8080/paginaUsuario/css/index.css" charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+          charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"
+          charset="UTF-8">
+    <%--    ------------------------------------------------------------------------------------------------------------%>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="http://localhost:8080/paginaUsuario/css/sobre.css">
     <%--    <link rel="stylesheet" href="http://localhost:8080/paginaUsuario/css/reset.css">--%>
     <link rel="stylesheet" href="http://localhost:8080/paginaUsuario/css/main.css">
-        <link href="http://localhost:8080/paginaUsuario/img/cs%20logo.png" rel="icon">
+    <link href="http://localhost:8080/paginaUsuario/img/cs%20logo.png" rel="icon">
     <title>Sobre</title>
 </head>
 <body>
-<div class="containe-pai">
+
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-        <a class="navbar-brand" href="http://localhost:8080/paginaUsuario/usuarioPerfil.jsp">
-            <img src="http://localhost:8080/paginaUsuario/img/cs logo.png" alt="logo da Curso Store" width="90" height="72" class="d-inline-block align-text-top">
+    <div class="container-logo">
+        <div class="logo-imagem">
+            <a href="http://localhost:8080/paginaUsuario/usuarioPerfil.jsp">
+                <img src="http://localhost:8080/paginaUsuario/img/cs logo.png" alt="logo da Curso Store" width="90"
+                     height="72"
+                     class="d-inline-block align-text-top">
+            </a>
+        </div>
+        <div class="logo-texto"></div>
+    </div>
+
+    <div class="menu">
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="http://localhost:8080/paginaUsuario/usuarioPerfil.jsp">Home </a></li>
+            <li><a href="http://localhost:8080/paginaUsuario/cursos.jsp">Cursos </a></li>
+<%--            <li><a href="http://localhost:8080/paginaUsuario/sobre.jsp" target="_blank">Sobre </a></li>--%>
+        </ul>
+    </div>
+    <c:if test="${sessionScope.username != null}">
+        <span>${sessionScope.username}</span>
+    </c:if>
+
+<%---------------------------------------------------NaverBar e pesquisa link-------------------------------------------------%>
+    <div class="search-box">
+        <form action="https://www.google.com/search" method="GET" class="form-inline my-2 my-lg-0">
+            <div class="input-group">
+                <input class="form-control mr-sm-2" type="text" name="q" placeholder="Pesquisar..." aria-label="Search">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img class="loupe"
+                                                                                            src="http://localhost:8080/paginaUsuario/img/lupa-arredondada.png"
+                                                                                            alt="lupa" width="25px"
+                                                                                            height="25px"></button>
+                </div>
+            </div>
+        </form>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    </div>
+</header>
+<div class="containe-pai">
+    <header>
         <div class="collapse navbar-collapse navbar-dark" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="usuarioPerfil.jsp">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="cursos.jsp">Cursos</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                       aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
             </ul>
-            <form action="https://www.google.com/search" method="GET" class="form-inline my-2 my-lg-0">
-                <div class="input-group">
-                    <input class="form-control mr-sm-2" type="text" name="q" placeholder="Pesquisar..." aria-label="Search">
-                    <div class="input-group-append">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
-                    </div>
-                </div>
-            </form>
+
         </div>
     </nav>
-
-
-
-
-<%--    <div class="menu">--%>
-<%--        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">--%>
-
-<%--            <li><a href="#">Cursos </a></li>--%>
-<%--            <li><a href="http://localhost:8080/paginaUsuario/sobre.jsp" target="_blank">Sobre </a></li>--%>
-<%--        </ul>--%>
-<%--    </div>--%>
-<%--    <span> Olá ${sessionScope.username}!</span>--%>
 
 </header>
 <div class="h1-text">
@@ -118,22 +124,26 @@
     ga('set', 'transport', 'beacon');
     ga('send', 'pageview')
 </script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
 
 
-<div class="roda">
-    <div class="text-h3">
-        <div class="logo-roda">
-            <a href="http://localhost:8080/paginaUsuario/usuarioPerfil.jsp">
+    <div class="rodape-sobre">
+        <div class="text-h3"><a href="http://localhost:8080/paginaUsuario/usuarioPerfil.jsp">
             <img src="http://localhost:8080/paginaUsuario/img/cs logo.png" alt="logo da Curso Store" width="90"
                  height="72"
-                 class="d-inline-block align-text-top"></a>
-            <h3>CS Store Cursos que muda vidas
-
-            </h3>
+                 class="d-inline-block align-text-top">
+            <h3>CScursos &copy; 2023</h3>
+            </img>
+        </a>
         </div>
+        <%--        <div class="logo-rodape">--%>
+        <%--            <a href="http://localhost:8080/paginaUsuario/usuarioPerfil.jsp">--%>
+        <%--                <img src="http://localhost:8080/paginaUsuario/img/cs logo.png" alt="logo da Curso Store" width="90" height="72"--%>
+        <%--                     class="d-inline-block align-text-top">--%>
+        <%--                </img>--%>
+        <%--            </a>--%>
+        <%--        </div>--%>
     </div>
-</div>
 </div>
 </div>
 

@@ -59,7 +59,7 @@ body {
     align-items: center;
     padding-top: 30px;
     margin: 15px;
-    border: 3px solid red;
+    /*border: 1px solid red;*/
     border-radius: 20em;
     font-size: 50px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -67,7 +67,7 @@ body {
 
 .caixa {
     position: relative;
-    width: 1020px;
+    width: 640px;
     height: 500px;
     color: #fff;
     background-color: #151320;
@@ -171,8 +171,30 @@ h1 {
     border: 5px solid #9e082d;
 }
 
-.logo-roda {
+
+
+/* Rodapé */
+.rodape-sobre {
+    margin-top: 25px;
+    max-height: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+.text-h3 {
+    display: flex;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    align-content: center;
+
+}
+.iframe{
     border: 5px solid #9e082d;
+}
+
+
+.logo-roda {
     display: flex;
     justify-content: center;
     align-items: center;
