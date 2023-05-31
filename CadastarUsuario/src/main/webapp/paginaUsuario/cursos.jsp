@@ -70,7 +70,6 @@
                 </div>
             </div>
         </form>
-        </a>
     </div>
 </header>
 
@@ -120,9 +119,9 @@
         margin-bottom: 10px;
     }
 
-p{
-color:white;
-}
+    p {
+        color: white;
+    }
 </style>
 <div class="lista-video">
     <ul class="course-list">
@@ -130,64 +129,294 @@ color:white;
             <h2>Curso de Desenvolvimento Web</h2>
             <p>Aprenda as principais tecnologias web, como HTML, CSS, JavaScript e frameworks populares.</p>
             <div class="content hidden">
-                <iframe width="560" height="200" src="https://www.youtube.com/embed/KDab8z0K3aI"> allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-                <iframe width="560" height="200" src="https://www.youtube.com/embed/yjmhSn0j8ac"> allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+                <iframe width="560" height="200" src="https://www.youtube.com/embed/KDab8z0K3aI"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                <iframe width="560" height="200" src="https://www.youtube.com/embed/yjmhSn0j8ac"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 <br>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ptbk2af68e8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <iframe width="300" height="200" src="https://www.youtube.com/embed/01NubIe9Pao" title="🔴 APRENDA O QUE É HTML E CRIE SEU PRIMEIRO SITE - BÔNUS INCRÍVEL NO FINAL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ptbk2af68e8"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/01NubIe9Pao"
+                        title="🔴 APRENDA O QUE É HTML E CRIE SEU PRIMEIRO SITE - BÔNUS INCRÍVEL NO FINAL"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
             </div>
         </li>
         <li id="course2" onclick="toggleContent('course2')">
             <h2>Curso de Java</h2>
             <p>Explore técnicas de análise de dados, aprendizado de máquina e visualização de dados.</p>
             <div class="content hidden">
-                    <iframe width="560" height="200" src="https://www.youtube.com/embed/X8AnVQ-GqLU"></iframe>
-                    <iframe width="560" height="200" src="https://www.youtube.com/embed/xap-zvN8pOc"></iframe>
-                    <br>
-                    <iframe width="560" height="200" src="https://www.youtube.com/embed/qQWizjnAtbs"></iframe>
-                    <iframe width="560" height="200" src="https://www.youtube.com/embed/sRsAbGjBb4g"></iframe>
+                <iframe width="250" height="200" src="https://www.youtube.com/embed/LnORjqZUMIQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="250" height="200" src="https://www.youtube.com/embed/ddhH97IPrFY"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="250" height="200" src="https://www.youtube.com/embed/CMHU5buXvNw"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="250" height="200" src="https://www.youtube.com/embed/BTNp4P12DIs"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="250" height="200" src="https://www.youtube.com/embed/xQEauKE4NTw"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="250" height="200" src="https://www.youtube.com/embed/mu2ti43cgwc"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="250" height="200" src="https://www.youtube.com/embed/3rZNefsMmKs"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="250" height="200" src="https://www.youtube.com/embed/dhGPGv7XCM8"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="250" height="200" src="https://www.youtube.com/embed/Ebvl0BlnD-U"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="250" height="200" src="https://www.youtube.com/embed/NoEoOaTSFMo"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="250" height="200" src="https://www.youtube.com/embed/74QEhBpzixs"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="250" height="200" src="https://www.youtube.com/embed/KUUrrIX6wGo"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="250" height="200" src="https://www.youtube.com/embed/ELBqT_rueAQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
             </div>
         </li>
-        <li>
+        <li id="course3" onclick="toggleContent('course3')">
             <h2>Curso de Segurança da Informação</h2>
             <p>Aprenda a proteger sistemas e dados contra ameaças cibernéticas.</p>
+            <div class="content hidden">
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/KvPtIl-Gz2E"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/YjjTteeZbUM"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="250" height="200" src="https://www.youtube.com/embed/vrUFULAjy9A"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="250" height="200" src="https://www.youtube.com/embed/L7zUw31VqRc"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="25" height="200" src="https://www.youtube.com/embed/Y0beKLRf-fI"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="250" height="200" src="https://www.youtube.com/embed/mJCbnSrlQhs"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="250" height="200" src="https://www.youtube.com/embed/4aPVdQtYQTg"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="250" height="200" src="https://www.youtube.com/embed/yMaPEZVAuqk"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+            </div>
         </li>
-        <li>
+
+        <li id="course4" onclick="toggleContent('course4')">
             <h2>Curso de Desenvolvimento de Aplicativos Móveis</h2>
             <p>Crie aplicativos para dispositivos móveis usando frameworks como React Native ou Flutter.</p>
+
+            <div class="content hidden">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HYr8WoUkoes"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vUWRRnWQx_U"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VdWh7HTTH9A"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/M5HyVZJocjM"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/12KKwA_Y_Ak"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BeHXJeIgTxw"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/bujDrL6tyGY"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HaUUYiltwa0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cAcPjO5eTY0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yVaDgaV6AL8"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+            </div>
         </li>
 
+        <li id="course5" onclick="toggleContent('course5')">
+            <h2>Curso Git Hub</h2>
+            <p>O Git é um sistema de controle de versão amplamente utilizado que permite
+                gerenciar e controlar o histórico de alterações em um projeto.</p>
+            <p> O GitHub por sua vez é uma plataforma baseada em nuvem que oferece recursos para hospedar,
+                compartilhar e colaborar em repositórios Git..</p>
+            <div class="content hidden">
 
+                <iframe width="250" height="200" src="https://www.youtube.com/embed/MiZr3YtrVk0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+
+                <iframe width="250" height="200" src="https://www.youtube.com/embed/Q9G_xCI7fq0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="250" height="200" src="https://www.youtube.com/embed/Q9G_xCI7fq0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="250" height="200" src="https://www.youtube.com/embed/Ipuv7SYOxkA"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="250" height="200" src="https://www.youtube.com/embed/r9LFSecJlFE"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="250" height="200" src="https://www.youtube.com/embed/b3LSVup5AMc"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="250" height="200" src="https://www.youtube.com/embed/nZwDype_1p8"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="250" height="200" src="https://www.youtube.com/embed/HcAkUWNJxbQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="250" height="200" src="https://www.youtube.com/embed/Cn4GZNIYIsI"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="250" height="200" src="https://www.youtube.com/embed/4T9q32xqovY"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                <iframe width="250" height="200" src="https://www.youtube.com/embed/MiZr3YtrVk0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+
+            </div>
+        </li>
     </ul>
 </div>
-    <div class="roda">
-        <div class="text-h3">
-            <h3>CSloution &copy; 2023</h3>
-        </div>
-        <div class="logo-roda">
-            <a href="index.html">
-                <img src="http://localhost:8080/paginaUsuario/img/cs logo.png" alt="logo da Curso Store" width="90"
-                     height="72"
-                     class="d-inline-block align-text-top">
-                </img>
-            </a>
-        </div>
+
+<div class="roda">
+    <div class="text-h3">
+        <h3>CSloution &copy; 2023</h3>
     </div>
+    <div class="logo-roda">
+        <a href="index.html">
+            <img src="http://localhost:8080/paginaUsuario/img/cs logo.png" alt="logo da Curso Store" width="90"
+                 height="72"
+                 class="d-inline-block align-text-top">
+            </img>
+        </a>
+    </div>
+</div>
 
-    <script>
-        function toggleContent(elementId) {
-            var listItem = document.getElementById(elementId);
-            var content = listItem.querySelector(".content");
+<script>
+    function toggleContent(elementId) {
+        var listItem = document.getElementById(elementId);
+        var content = listItem.querySelector(".content");
 
-            if (content.classList.contains("hidden")) {
-                content.classList.remove("hidden");
-            } else {
-                content.classList.add("hidden");
-            }
+        if (content.classList.contains("hidden")) {
+            content.classList.remove("hidden");
+        } else {
+            content.classList.add("hidden");
         }
-    </script>
+    }
+</script>
 </body>
 </html>
 
