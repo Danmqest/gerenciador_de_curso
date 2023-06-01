@@ -15,7 +15,11 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 <link rel="stylesheet" href="http://localhost:8080/paginaUsuario/css/sobre.css">
+
+
+
 <link rel="stylesheet" href="http://localhost:8080/paginaUsuario/css/main.css">
+
     <link href="http://localhost:8080/paginaUsuario/img/cs%20logo.png" rel="icon"> <link href="http://localhost:8080/paginaUsuario/img/cs%20logo.png" rel="icon">
 <link rel="stylesheet" href="http://localhost:8080/paginaUsuario/css/estiloTelaUsuario.css" charset="UTF-8">
 <link rel="stylesheet" href="http://localhost:8080/paginaUsuario/css/bootstrap.css" charset="UTF-8">
@@ -29,9 +33,12 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 <link rel="stylesheet" href="http://localhost:8080/paginaUsuario/css/sobre.css">
-<%--    <link rel="stylesheet" href="http://localhost:8080/paginaUsuario/css/reset.css">--%>
 <link rel="stylesheet" href="http://localhost:8080/paginaUsuario/css/main.css">
 <link href="http://localhost:8080/paginaUsuario/img/cs%20logo.png" rel="icon">
+
+
+
+
 <head>
 <body>
 
@@ -51,6 +58,7 @@
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
             <li><a href="http://localhost:8080/paginaUsuario/usuarioPerfil.jsp">Home </a></li>
             <li><a href="http://localhost:8080/paginaUsuario/sobre.jsp" target="_blank">Sobre </a></li>
+            <li><a href="http://localhost:8080/paginaUsuario/TelaCadastro.jsp">Add.Videos </a></li>
         </ul>
     </div>
     <c:if test="${sessionScope.username != null}">

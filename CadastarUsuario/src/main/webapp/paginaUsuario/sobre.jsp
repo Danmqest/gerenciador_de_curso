@@ -42,6 +42,7 @@
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
             <li><a href="http://localhost:8080/paginaUsuario/usuarioPerfil.jsp">Home </a></li>
             <li><a href="http://localhost:8080/paginaUsuario/cursos.jsp">Cursos </a></li>
+
 <%--            <li><a href="http://localhost:8080/paginaUsuario/sobre.jsp" target="_blank">Sobre </a></li>--%>
         </ul>
     </div>
